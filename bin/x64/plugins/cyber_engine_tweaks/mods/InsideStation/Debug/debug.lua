@@ -9,6 +9,7 @@ function Debug:New(core_obj)
     obj.is_im_gui_player_local = false
     obj.is_set_observer = false
     obj.is_im_gui_line_info = false
+    obj.is_im_gui_station_info = false
     obj.is_im_gui_measurement = false
     obj.is_im_gui_ristrict = false
     return setmetatable(obj, self)
@@ -24,6 +25,7 @@ function Debug:ImGuiMain()
     self:SelectPrintDebug()
     self:ImGuiPlayerPosition()
     self:ImGuiLineInfo()
+    self:ImGuiStationInfo()
     self:ImGuiMeasurement()
     self:ImGuiExcuteFunction()
 
@@ -101,7 +103,7 @@ function Debug:SelectPrintDebug()
 end
 
 function Debug:ImGuiPlayerPosition()
-    self.is_im_gui_player_local = ImGui.Checkbox("[ImGui] Player Pos", self.is_im_gui_player_local)
+    self.is_im_gui_player_local = ImGui.Checkbox("[ImGui] Player Info", self.is_im_gui_player_local)
     if self.is_im_gui_player_local then
         local player = Game.GetPlayer()
         if player == nil then
@@ -112,6 +114,11 @@ function Debug:ImGuiPlayerPosition()
         local y_lo = string.format("%.2f", player_pos.y)
         local z_lo = string.format("%.2f", player_pos.z)
         ImGui.Text("Player World Pos : " .. x_lo .. ", " .. y_lo .. ", " .. z_lo)
+        local player_angle = player:GetWorldOrientation():ToEulerAngles()
+        local roll = string.format("%.2f", player_angle.roll)
+        local pitch = string.format("%.2f", player_angle.pitch)
+        local yaw = string.format("%.2f", player_angle.yaw)
+        ImGui.Text("Player World Angle : " .. roll .. ", " .. pitch .. ", " .. yaw)
     end
 end
 
@@ -125,7 +132,15 @@ function Debug:ImGuiLineInfo()
         ImGui.Text("Next Station : " .. next_station)
         ImGui.Text("Line : " .. line)
     end
-end 
+end
+
+function Debug:ImGuiStationInfo()
+    self.is_im_gui_station_info = ImGui.Checkbox("[ImGui] Station Info", self.is_im_gui_station_info)
+    if self.is_im_gui_station_info then
+        local telep_area_type = self.core_obj.hud_obj.teleport_area_type
+        ImGui.Text("Teleport Area Type : " .. telep_area_type)
+    end
+end
 
 function Debug:ImGuiMeasurement()
     self.is_im_gui_measurement = ImGui.Checkbox("[ImGui] Measurement", self.is_im_gui_measurement)
@@ -153,18 +168,12 @@ end
 
 function Debug:ImGuiExcuteFunction()
     if ImGui.Button("TF1") then
-        local sys = Game.GetPlayer():GetFastTravelSystem()
-        local arr = sys:GetFastTravelPoints()
-        print(#arr)
-        for _, point in ipairs(arr) do
-            local pointID = tostring(point.pointRecord.value)
-            if string.find(pointID, 'wat_lch_metro_ftp_02', 1, true) then
-                pointData = point
-                break
-            end
-        end
-        sys:PerformFastTravel(Game.GetPlayer(), pointData)
-        sys:SetFastTravelStarted()
+        local player = Game.GetPlayer()
+        local player_pos = player:GetWorldPosition()
+        local forward = player:GetWorldForward()
+        local new_pos = Vector4.new(player_pos.x + 3 * forward.x, player_pos.y + 3 * forward.y, player_pos.z + 3 * forward.z, player_pos.w)
+        local angle = player:GetWorldOrientation():ToEulerAngles()
+        Game.GetTeleportationFacility():Teleport(player, new_pos, angle)
         print("Excute Test Function 1")
     end
     ImGui.SameLine()
