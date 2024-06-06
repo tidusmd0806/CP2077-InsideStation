@@ -114,11 +114,13 @@ function Debug:ImGuiPlayerPosition()
         local y_lo = string.format("%.2f", player_pos.y)
         local z_lo = string.format("%.2f", player_pos.z)
         ImGui.Text("Player World Pos : " .. x_lo .. ", " .. y_lo .. ", " .. z_lo)
-        local player_angle = player:GetWorldOrientation():ToEulerAngles()
+        local player_quot = player:GetWorldOrientation()
+        local player_angle = player_quot:ToEulerAngles()
         local roll = string.format("%.2f", player_angle.roll)
         local pitch = string.format("%.2f", player_angle.pitch)
         local yaw = string.format("%.2f", player_angle.yaw)
         ImGui.Text("Player World Angle : " .. roll .. ", " .. pitch .. ", " .. yaw)
+        ImGui.Text("Player world Quot : " .. player_quot.i .. ", " .. player_quot.j .. ", " .. player_quot.k .. ", " .. player_quot.r)
     end
 end
 
@@ -158,11 +160,15 @@ function Debug:ImGuiMeasurement()
         ---
         ImGui.PopStyleVar(2)
         ImGui.PopStyleColor(1)
+        local const_ = 0.5
         local look_at_pos = Game.GetTargetingSystem():GetLookAtPosition(Game.GetPlayer())
+        local player_forward = Game.GetPlayer():GetWorldForward()
         local pos_x = string.format("%.2f", look_at_pos.x)
         local pos_y = string.format("%.2f", look_at_pos.y)
         local pos_z = string.format("%.2f", look_at_pos.z)
+        local pos_back = Vector4.new(look_at_pos.x - const_ * player_forward.x, look_at_pos.y - const_ * player_forward.y, look_at_pos.z - const_ * player_forward.z, 1)
         ImGui.Text("[LookAt]X:" .. pos_x .. ", Y:" .. pos_y .. ", Z:" .. pos_z)
+        ImGui.Text("[Back]X:" .. string.format("%.2f", pos_back.x) .. ", Y:" .. string.format("%.2f", pos_back.y) .. ", Z:" .. string.format("%.2f", pos_back.z))
     end
 end
 

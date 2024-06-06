@@ -7,7 +7,7 @@ function HUD:New()
     obj.log_obj = Log:New()
     obj.log_obj:SetLevel(LogLevel.Info, "HUD")
     -- static --
-    obj.mappin_pos_offset_z = 1.5
+    obj.mappin_pos_offset_z = 2.0
     -- dynamic --
     obj.interaction_ui_base = nil
     obj.interaction_hub = nil
@@ -87,7 +87,7 @@ function HUD:SetChoice(variation)
     hub.id = 69420 + math.random(99999)
 
     if variation == Def.ChoiceVariation.Enter then
-        local icon = TweakDBInterface.GetChoiceCaptionIconPartRecord("ChoiceCaptionParts.MetroIcon")
+        local icon = TweakDBInterface.GetChoiceCaptionIconPartRecord("ChoiceCaptionParts.GetInIcon")
         local caption_part = gameinteractionsChoiceCaption.new()
         local choice_type = gameinteractionsChoiceTypeWrapper.new()
         caption_part:AddPartFromRecord(icon)
@@ -95,14 +95,14 @@ function HUD:SetChoice(variation)
 
         local choice = gameinteractionsvisListChoiceData.new()
 
-        local lockey = GetLocalizedText("LocKey#37918")
+        local lockey = GetLocalizedText("LocKey#36926")
         choice.localizedName = lockey
         choice.inputActionName = CName.new("None")
         choice.captionParts = caption_part
         choice.type = choice_type
         table.insert(tmp_list, choice)
     elseif variation == Def.ChoiceVariation.Exit then
-        local icon = TweakDBInterface.GetChoiceCaptionIconPartRecord("ChoiceCaptionParts.SitIcon")
+        local icon = TweakDBInterface.GetChoiceCaptionIconPartRecord("ChoiceCaptionParts.GetInIcon")
         local caption_part = gameinteractionsChoiceCaption.new()
         local choice_type = gameinteractionsChoiceTypeWrapper.new()
         caption_part:AddPartFromRecord(icon)
@@ -110,7 +110,7 @@ function HUD:SetChoice(variation)
 
         local choice = gameinteractionsvisListChoiceData.new()
 
-        local lockey = GetLocalizedText("LocKey#522")
+        local lockey = GetLocalizedText("LocKey#36500")
         choice.localizedName = lockey
         choice.inputActionName = CName.new("None")
         choice.captionParts = caption_part
@@ -183,8 +183,8 @@ function HUD:UpdateMappins()
             local distance = Vector4.Distance(Game.GetPlayer():GetWorldPosition(), position)
             if distance < area_info.r_2 then
                 local mappin_data = MappinData.new()
-                mappin_data.mappinType = TweakDBID.new('Mappins.DefaultStaticMappin')
-                mappin_data.variant = gamedataMappinVariant.ExclamationMarkVariant
+                mappin_data.mappinType = TweakDBID.new('Mappins.InteractionMappinDefinition')
+                mappin_data.variant = gamedataMappinVariant.GetInVariant
                 mappin_data.visibleThroughWalls = true
                 table.insert(self.mappin_id_list ,Game.GetMappinSystem():RegisterMappin(mappin_data, position))
             end
@@ -196,8 +196,8 @@ function HUD:UpdateMappins()
             local distance = Vector4.Distance(Game.GetPlayer():GetWorldPosition(), position)
             if distance < area_info.r_2 then
                 local mappin_data = MappinData.new()
-                mappin_data.mappinType = TweakDBID.new('Mappins.DefaultStaticMappin')
-                mappin_data.variant = gamedataMappinVariant.ExclamationMarkVariant
+                mappin_data.mappinType = TweakDBID.new('Mappins.InteractionMappinDefinition')
+                mappin_data.variant = gamedataMappinVariant.GetInVariant
                 mappin_data.visibleThroughWalls = true
                 table.insert(self.mappin_id_list ,Game.GetMappinSystem():RegisterMappin(mappin_data, position))
             end

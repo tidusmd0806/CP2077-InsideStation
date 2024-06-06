@@ -12,6 +12,8 @@ function Core:New()
     -- static --
     obj.area_check_interval = 0.2
     obj.mappin_check_interval = 2
+    obj.teleport_resolution = 0.01
+    obj.teleport_division_num = 5
     -- dynamic --
     obj.entry_area_index = 0
     obj.exit_area_index = 0
@@ -86,6 +88,7 @@ function Core:CheckTeleportAreaType()
                     self.entry_area_index = index
                     self.exit_area_index = 0
                     self.hud_obj:SetTeleportAreaType(Def.TeleportAreaType.EntranceImmediately)
+                    self:Teleport()
                     return Def.TeleportAreaType.EntranceImmediately
                 end
             end
@@ -104,6 +107,7 @@ function Core:CheckTeleportAreaType()
                     self.entry_area_index = 0
                     self.exit_area_index = index
                     self.hud_obj:SetTeleportAreaType(Def.TeleportAreaType.PlatformImmediately)
+                    self:Teleport()
                     return Def.TeleportAreaType.PlatformImmediately
                 end
             end
@@ -129,9 +133,18 @@ function Core:Teleport()
         self.log_obj:Record(LogLevel.Critical, "Unexpected teleportation area index")
         return
     end
+    local player_pos = player:GetWorldPosition()
     self:PlayFTEffect()
     Cron.After(1, function()
-        Game.GetTeleportationFacility():Teleport(player, new_pos, new_angle)
+        Cron.Every(self.teleport_resolution, {tick = 1}, function(timer)
+            local new_pos_tmp = Vector4.new(timer.tick / self.teleport_division_num * new_pos.x + (1 - timer.tick / self.teleport_division_num) * player_pos.x, timer.tick / self.teleport_division_num * new_pos.y + (1 - timer.tick / self.teleport_division_num) * player_pos.y, timer.tick / self.teleport_division_num * new_pos.z + (1 - timer.tick / self.teleport_division_num) * player_pos.z, 1)
+            Game.GetTeleportationFacility():Teleport(player, new_pos_tmp, new_angle)
+            if timer.tick == self.teleport_division_num then
+                timer:Halt()
+                return
+            end
+            timer.tick = timer.tick + 1
+        end)
     end)
 
 end
