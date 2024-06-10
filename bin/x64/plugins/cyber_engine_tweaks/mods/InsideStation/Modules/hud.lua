@@ -68,6 +68,10 @@ function HUD:SetTeleportAreaType(area_type)
     self.teleport_area_type = area_type
 end
 
+function HUD:GetTeleportAreaType()
+    return self.teleport_area_type
+end
+
 function HUD:IsEnableChoiceUI()
     if self.teleport_area_type == Def.TeleportAreaType.EntranceChoice or self.teleport_area_type == Def.TeleportAreaType.PlatformChoice then
         return true
@@ -177,10 +181,14 @@ end
 function HUD:UpdateMappins()
 
     self:RemoveMappins()
+    local player = Game.GetPlayer()
+    if player == nil then
+        return
+    end
     for _, area_info in ipairs(Data.EntryArea) do
         if self:GetStationID() == area_info.st_id then
             local position = Vector4.new(area_info.pos.x, area_info.pos.y, area_info.pos.z + self.mappin_pos_offset_z, 1)
-            local distance = Vector4.Distance(Game.GetPlayer():GetWorldPosition(), position)
+            local distance = Vector4.Distance(player:GetWorldPosition(), position)
             if distance < area_info.r_2 then
                 local mappin_data = MappinData.new()
                 mappin_data.mappinType = TweakDBID.new('Mappins.InteractionMappinDefinition')
@@ -193,7 +201,7 @@ function HUD:UpdateMappins()
     for _, area_info in ipairs(Data.ExitArea) do
         if self:GetStationID() == area_info.st_id then
             local position = Vector4.new(area_info.pos.x, area_info.pos.y, area_info.pos.z + self.mappin_pos_offset_z, 1)
-            local distance = Vector4.Distance(Game.GetPlayer():GetWorldPosition(), position)
+            local distance = Vector4.Distance(player:GetWorldPosition(), position)
             if distance < area_info.r_2 then
                 local mappin_data = MappinData.new()
                 mappin_data.mappinType = TweakDBID.new('Mappins.InteractionMappinDefinition')

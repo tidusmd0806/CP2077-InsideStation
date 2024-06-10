@@ -13,7 +13,8 @@ function Core:New()
     obj.area_check_interval = 0.2
     obj.mappin_check_interval = 2
     obj.teleport_resolution = 0.01
-    obj.teleport_division_num = 5
+    obj.teleport_division_num = 30
+    obj.teleport_delay = 0.3
     -- dynamic --
     obj.entry_area_index = 0
     obj.exit_area_index = 0
@@ -73,6 +74,10 @@ end
 function Core:CheckTeleportAreaType()
 
     local player = Game.GetPlayer()
+    if player == nil then
+        self.log_obj:Record(LogLevel.Debug, "Player is nil")
+        return
+    end
     local player_pos = player:GetWorldPosition()
     local active_station_id = self:GetStationID()
     for index, area_info in ipairs(Data.EntryArea) do
@@ -84,7 +89,7 @@ function Core:CheckTeleportAreaType()
                     self.exit_area_index = 0
                     self.hud_obj:SetTeleportAreaType(Def.TeleportAreaType.EntranceChoice)
                     return Def.TeleportAreaType.EntranceChoice
-                else
+                elseif self.hud_obj:GetTeleportAreaType() ~= Def.TeleportAreaType.EntranceImmediately then
                     self.entry_area_index = index
                     self.exit_area_index = 0
                     self.hud_obj:SetTeleportAreaType(Def.TeleportAreaType.EntranceImmediately)
@@ -103,7 +108,7 @@ function Core:CheckTeleportAreaType()
                     self.exit_area_index = index
                     self.hud_obj:SetTeleportAreaType(Def.TeleportAreaType.PlatformChoice)
                     return Def.TeleportAreaType.PlatformChoice
-                else
+                elseif self.hud_obj:GetTeleportAreaType() ~= Def.TeleportAreaType.PlatformImmediately then
                     self.entry_area_index = 0
                     self.exit_area_index = index
                     self.hud_obj:SetTeleportAreaType(Def.TeleportAreaType.PlatformImmediately)
@@ -135,7 +140,7 @@ function Core:Teleport()
     end
     local player_pos = player:GetWorldPosition()
     self:PlayFTEffect()
-    Cron.After(1, function()
+    Cron.After(self.teleport_delay, function()
         Cron.Every(self.teleport_resolution, {tick = 1}, function(timer)
             local new_pos_tmp = Vector4.new(timer.tick / self.teleport_division_num * new_pos.x + (1 - timer.tick / self.teleport_division_num) * player_pos.x, timer.tick / self.teleport_division_num * new_pos.y + (1 - timer.tick / self.teleport_division_num) * player_pos.y, timer.tick / self.teleport_division_num * new_pos.z + (1 - timer.tick / self.teleport_division_num) * player_pos.z, 1)
             Game.GetTeleportationFacility():Teleport(player, new_pos_tmp, new_angle)
