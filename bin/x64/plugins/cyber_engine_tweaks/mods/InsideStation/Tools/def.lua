@@ -7,10 +7,12 @@ Def.ChoiceVariation = {
     Exit = 1
 }
 
-Def.AreaCodeInSt = {
+Def.TeleportAreaType = {
     None = 0,
-    Entrance = 1,
-    Platform = 2,
+    EntranceImmediately = 1,
+    EntranceChoice = 2,
+    PlatformImmediately = 3,
+    PlatformChoice = 4
 }
 
 return Def

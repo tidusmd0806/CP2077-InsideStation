@@ -15,8 +15,8 @@ local Debug = require('Debug/debug.lua')
 
 InsideStation = {
 	description = "Inside The Station",
-	version = "0.1.0",
-    is_debug_mode = true,
+	version = "1.0.0",
+    is_debug_mode = false,
     -- version check
     cet_required_version = 32.2, -- 1.32.2
     cet_version_num = 0,
