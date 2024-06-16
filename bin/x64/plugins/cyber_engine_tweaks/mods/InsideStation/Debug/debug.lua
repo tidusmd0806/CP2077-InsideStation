@@ -39,16 +39,13 @@ function Debug:SetObserver()
         -- reserved
         -- Observe("DataTerm", "OnAreaEnter", function(this, evt)
         --     print("DataTerm OnAreaEnter")
-        --     print(evt.componentName)
-        --     this:OpenSubwayGate()
+        --     -- print(evt.componentName)
+        --     -- this:OpenSubwayGate()
         -- end)
-
-        -- Observe("DataTerm", "OnAreaExit", function(this, evt)
-        --     print("DataTerm OnAreaExit")
-        --     print(evt.componentName)
-        --     this:CloseSubwayGate()
+        -- Observe("FastTravelSystem", "QueueRequest", function(this, evt)
+        --     print("FastTravelSystem QueueRequest")
+        --     print(evt:ToString())
         -- end)
-
         -- Observe("QuestsSystem", "SetFact", function(this, factName, value)
         --     if string.find(factName.value, "ue_metro") then
         --         print('SetFact')
