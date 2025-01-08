@@ -171,50 +171,21 @@ end
 
 function Debug:ImGuiExcuteFunction()
     if ImGui.Button("TF1") then
-        local player = Game.GetPlayer()
-        local player_pos = player:GetWorldPosition()
-        local forward = player:GetWorldForward()
-        local new_pos = Vector4.new(player_pos.x + 3 * forward.x, player_pos.y + 3 * forward.y, player_pos.z + 3 * forward.z, player_pos.w)
-        local angle = player:GetWorldOrientation():ToEulerAngles()
-        Game.GetTeleportationFacility():Teleport(player, new_pos, angle)
+        local look_at_obj = Game.GetTargetingSystem():GetLookAtObject(Game.GetPlayer())
+        print(look_at_obj:GetClassName())
+        if look_at_obj:IsA("DataTerm") then
+            local comp = look_at_obj:FindComponentByName(CName.new("collider"))
+            if comp ~= nil then
+                print("collider")
+            end
+        end
         print("Excute Test Function 1")
     end
     ImGui.SameLine()
     if ImGui.Button("TF2") then
-        local player = Game.GetPlayer()
-        local player_pos = player:GetWorldPosition()
-        local forward = player:GetWorldForward()
-        local new_pos = Vector4.new(player_pos.x + 3 * forward.x, player_pos.y + 3 * forward.y, player_pos.z + 3 * forward.z, player_pos.w)
-        local angle = player:GetWorldOrientation():ToEulerAngles()
-        Game.GetTeleportationFacility():Teleport(player, new_pos, angle)
+        InsideStation.core_obj.hud_obj:SetChoice(Def.ChoiceVariation.Enter)
         print("Excute Test Function 2")
     end
-    ImGui.SameLine()
-    if ImGui.Button("TF3") then
-        local event = gameuiDeleteInputHintBySourceEvent.new()
-        event.source = CName.new("UI_DPad")
-        event.targetHintContainer = CName.new("GameplayInputHelper")
-        Game.GetUISystem():QueueEvent(event)
-        print("Excute Test Function 3")
-    end
-    ImGui.SameLine()
-    if ImGui.Button("TF4") then
-        local system = Game.GetQuestsSystem()
-        system:SetFact(CName.new("ue_metro_next_station"), 1) 
-        print("Excute Test Function 4")
-    end
-    ImGui.SameLine()
-    if ImGui.Button("TF5") then
-        print(Game.GetQuestsSystem():SetFact(CName.new("ue_metro_free_roam_get_up"), 1))
-        print("Excute Test Function 5")
-    end
-    ImGui.SameLine()
-    if ImGui.Button("TF6") then
-        local current_pos = Game.GetPlayer():GetWorldPosition()
-        print(current_pos.x .. ", " .. current_pos.y .. ", " .. current_pos.z)
-        print("Excute Test Function 6")
-    end
-
 end
 
 return Debug
