@@ -2,6 +2,19 @@ streaming:
   blocks:
     - its\new_ft_points.streamingblock
   sectors:
+    # 1:Elsenhowers st
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-28_29_0_0.streamingsector
+      expectedNodes: 604
+      nodeDeletions:
+        - index: 432
+          type: worldEntityNode
+    # 3:Farrier Ferguson
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-28_29_0_0.streamingsector
+      expectedNodes: 2833
+      nodeDeletions:
+        - index: 1506
+          type: worldEntityNode
+    # 4:Ellison Plaza
     - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
       expectedNodes: 3430
       nodeDeletions:
@@ -12,3 +25,151 @@ streaming:
       nodeDeletions:
         - index: 484
           type: worldEntityProxyMeshNode
+        - index: 2146
+          type: worldInstancedMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-12_7_0_1.streamingsector
+      expectedNodes: 1606
+      nodeDeletions:
+        - index: 1205
+          type: worldCollisionNode
+    # 9:Sarasti & Republic
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-23_7_0_0.streamingsector
+      expectedNodes: 721
+      nodeDeletions:
+        - index: 336
+          type: worldEntityNode
+    # 11:Wellsprings
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-34_-11_0_0.streamingsector
+      expectedNodes: 470
+      nodeDeletions:
+        - index: 299
+          type: worldEntityNode
+    # 12:Glen North
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-25_-11_0_0.streamingsector
+      expectedNodes: 1475
+      nodeDeletions:
+        - index: 641
+          type: worldEntityNode
+    # 13:Glen South
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-25_-21_0_0.streamingsector
+      expectedNodes: 1869
+      nodeDeletions:
+        - index: 1026
+          type: worldEntityNode
+    # 14:Congress & MLK
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-6_0_0.streamingsector
+      expectedNodes: 1024
+      nodeDeletions:
+        - index: 471
+          type: worldEntityNode
+    # 16:H10
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-23_18_0_0.streamingsector
+      expectedNodes: 3712
+      nodeDeletions:
+        - index: 2277
+          type: worldEntityNode
+    # 18:Ebunike
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-22_-11_0_0.streamingsector
+      expectedNodes: 2280
+      nodeDeletions:
+        - index: 1115
+          type: worldEntityNode
+    # 19:Pacifica
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-25_-31_0_0.streamingsector
+      expectedNodes: 135
+      nodeDeletions:
+        - index: 115
+          type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\quest_4b1cab1036dcd59e.streamingsector
+      expectedNodes: 148
+      nodeMutations:
+        - index: 123
+          type: worldTriggerAreaNode
+          position: [-1772.44202, 1868.98401, 17.9943848, 0.0]
+          orientation: [0.0, 0.0, 0.278692991, 0.960380316]
+          scale: [50.0, 50.0, 100.0]
+        - index: 95
+          type: worldTriggerAreaNode
+          position: [-1405.71875, 1745.9375, 15.2043457, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [100.0, 100.0, 100.0]
+        - index: 92
+          type: worldTriggerAreaNode
+          position: [-1605.31628, 1474.90723, 17.2538757, 0.0]
+          orientation: [0.0, 0.0, 0.278692991, 0.960380316]
+          scale: [50.0, 50.0, 100.0]
+        - index: 79
+          type: worldTriggerAreaNode
+          position: [-1390.46851, 1021.21985, 27.1136951, 0.0]
+          orientation: [0.0, 0.0, 0.278692991, 0.960380316]
+          scale: [50.0, 50.0, 50.0]
+        - index: 85
+          type: worldTriggerAreaNode
+          position: [-537.813232, 1131.90955, 31.591938, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [50.0, 50.0, 120.0]
+        - index: 57
+          type: worldTriggerAreaNode
+          position: [-588.0, 201.0, 20.0, 0.0]
+          orientation: [0.0, 0.0, -0.297016412, 0.95487237]
+          scale: [50.0, 50.0, 120.0]
+        - index: 69
+          type: worldTriggerAreaNode
+          position: [-2075.625, 476.375, 6.99145508, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [50.0, 50.0, 120.0]
+        - index: 21
+          type: worldTriggerAreaNode
+          position: [-1051.80505, -1440.09143, 29.3337135, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [120.0, 120.0, 80.0]
+        - index: 78
+          type: worldTriggerAreaNode
+          position: [-1455.60583, 458.800232, 4.8647337, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [100.0, 100.0, 120.0]
+        - index: 28
+          type: worldTriggerAreaNode
+          position: [-2106.5, -686.0, 6.5, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [100.0, 100.0, 150.0]
+        - index: 37
+          type: worldTriggerAreaNode
+          position: [-1553.24243, -630.228394, 3.54479265, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [50.0, 50.0, 120.0]
+        - index: 14
+          type: worldTriggerAreaNode
+          position: [-1594.875, -1291.125, 49.8867188, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [50.0, 50.0, 120.0]
+        - index: 48
+          type: worldTriggerAreaNode
+          position: [-1046.15662, -353.521027, -23.6815147, 0.0]
+          orientation: [0.0, 0.0, -0.298354775, 0.954455137]
+          scale: [150.0, 150.0, 150.0]
+        - index: 27
+          type: worldTriggerAreaNode
+          position: [157.492188, -1182.30823, 31.5609627, 0.0]
+          orientation: [0.0, 0.0, -0.238834947, 0.971060216]
+          scale: [50.0, 50.0, 50.0]
+        - index: 84
+          type: worldTriggerAreaNode
+          position: [-1456.0, 1187.0, 38.0, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [20.0, 20.0, 10.0]
+        - index: 62
+          type: worldTriggerAreaNode
+          position: [-130.624512, 131.558228, 11.6501656, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [60.0, 60.0, 120.0]
+        - index: 43
+          type: worldTriggerAreaNode
+          position: [-1363.11707, -647.410767, 5.84335327, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [50.0, 50.0, 120.0]
+        - index: 12
+          type: worldTriggerAreaNode
+          position: [-1547.09253, -1946.0, 62.0186539, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [150.0, 150.0, 50.0]
