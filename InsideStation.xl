@@ -9,7 +9,7 @@ streaming:
         - index: 432
           type: worldEntityNode
     # 3:Farrier Ferguson
-    - path: base\worlds\03_night_city\_compiled\default\exterior_-28_29_0_0.streamingsector
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-26_23_0_0.streamingsector
       expectedNodes: 2833
       nodeDeletions:
         - index: 1506
