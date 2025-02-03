@@ -25,13 +25,26 @@ streaming:
       nodeDeletions:
         - index: 484
           type: worldEntityProxyMeshNode
-        - index: 2146
-          type: worldInstancedMeshNode
-    - path: base\worlds\03_night_city\_compiled\default\exterior_-12_7_0_1.streamingsector
-      expectedNodes: 1606
+    #     - index: 2146
+    #       type: worldInstancedMeshNode
+    # - path: base\worlds\03_night_city\_compiled\default\exterior_-12_7_0_1.streamingsector
+    #   expectedNodes: 1606
+    #   nodeDeletions:
+    #     - index: 1205
+    #       type: worldCollisionNode
+    # 8:Wollesen st
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-23_0_0.streamingsector
+      expectedNodes: 1027
       nodeDeletions:
-        - index: 1205
-          type: worldCollisionNode
+        - index: 704
+          type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-16_-22_0_0.streamingsector
+      expectedNodes: 529
+      nodeDeletions:
+        - index: 301
+          type: worldEntityNode
+        - index: 302
+          type: worldEntityNode
     # 9:Sarasti & Republic
     - path: base\worlds\03_night_city\_compiled\default\exterior_-23_7_0_0.streamingsector
       expectedNodes: 721
@@ -62,6 +75,12 @@ streaming:
       nodeDeletions:
         - index: 471
           type: worldEntityNode
+    # 15:H7
+    - path: base\worlds\03_night_city\_compiled\default\always_loaded_0.streamingsector
+      expectedNodes: 15021
+      nodeDeletions:
+        - index: 10594
+          type: worldCompiledCommunityAreaNode
     # 16:H10
     - path: base\worlds\03_night_city\_compiled\default\exterior_-23_18_0_0.streamingsector
       expectedNodes: 3712
@@ -80,6 +99,111 @@ streaming:
       nodeDeletions:
         - index: 115
           type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\always_loaded_0.streamingsector
+      expectedNodes: 15021
+      nodeMutations:
+        #19
+        - index: 7359
+          type: worldStaticMarkerNode
+          position: [-1477.87, -1885.47, 70.84, 0.0]
+          orientation: [0.0, 0.0, -0.56072, -0.8280017]
+          scale: [1.0, 1.0, 1.0]
+        #13
+        - index: 9698
+          type: worldStaticMarkerNode
+          position: [-1598.19, -1285.30, 103.11, 0.0]
+          orientation: [0.0, 0.0, 0.99972, 0.0235593]
+          scale: [1.0, 1.0, 1.0]
+        #8
+        - index: 10090
+          type: worldStaticMarkerNode
+          position: [-1038.15, -1420.68, 51.42, 0.0]
+          orientation: [0.0, 0.0, -0.8840033, 0.4674805]
+          scale: [1.0, 1.0, 1.0]
+        #15
+        - index: 13367
+          type: worldStaticMarkerNode
+          position: [154.73, -1167.54, 39.81, 0.0]
+          orientation: [0.0, 0.0, 0.949013, 0.31523483]
+          scale: [1.0, 1.0, 1.0]
+    - path: base\worlds\03_night_city\_compiled\default\always_loaded_1.streamingsector
+      expectedNodes: 15090
+      nodeMutations:
+        #11
+        - index: 1493
+          type: worldStaticMarkerNode
+          position: [-2026.98, -643.05, 110.67, 0.0]
+          orientation: [0.0, 0.0, 0.69182276, 0.72206741]
+          scale: [1.0, 1.0, 1.0]
+        #12
+        - index: 1630
+          type: worldStaticMarkerNode
+          position: [-1580.61, -613.79, 93.22, 0.0]
+          orientation: [0.0, 0.0, 0.01281786, 0.9999178]
+          scale: [1.0, 1.0, 1.0]
+        #18
+        - index: 1731
+          type: worldStaticMarkerNode
+          position: [-1358.01, -637.63, 89.74, 0.0]
+          orientation: [0.0, 0.0, -0.99980360, -0.0198186]
+          scale: [1.0, 1.0, 1.0]
+        #6
+        - index: 7312
+          type: worldStaticMarkerNode
+          position: [-597.58, 204.36, 86.38, 0.0]
+          orientation: [0.0, 0.0, 0.889136672, -0.4576418]
+          scale: [1.0, 1.0, 1.0]
+        #17
+        - index: 7509
+          type: worldStaticMarkerNode
+          position: [-118.59, 124.05, 51.97, 0.0]
+          orientation: [0.0, 0.0, -0.95188, -0.306449]
+          scale: [1.0, 1.0, 1.0]
+        #7
+        - index: 8523
+          type: worldStaticMarkerNode
+          position: [-2068.57, 479.28, 74.78, 0.0]
+          orientation: [0.0, 0.0, -0.70482623, 0.70938]
+          scale: [1.0, 1.0, 1.0]
+        #16
+        - index: 12698
+          type: worldStaticMarkerNode
+          position: [-1466.57, 1173.18, 45.97, 0.0]
+          orientation: [0.0, 0.0, -0.2604372, -0.9654908]
+          scale: [1.0, 1.0, 1.0]
+        #4
+        - index: 12723
+          type: worldStaticMarkerNode
+          position: [-1419.57, 1041.43, 45.73, 0.0]
+          orientation: [0.0, 0.0, -0.99230921, -0.1237843]
+          scale: [1.0, 1.0, 1.0]
+        #5
+        - index: 13272
+          type: worldStaticMarkerNode
+          position: [-517.18, 1147.96, 104.55, 0.0]
+          orientation: [0.0, 0.0, 0.95773768, 0.28764298]
+          scale: [1.0, 1.0, 1.0]
+        #3
+        - index: 14831
+          type: worldStaticMarkerNode
+          position: [-1600.89, 1487.05, 48.18, 0.0]
+          orientation: [0.0, 0.0, -0.654531, -0.756034]
+          scale: [1.0, 1.0, 1.0]
+    - path: base\worlds\03_night_city\_compiled\default\always_loaded_2.streamingsector
+      expectedNodes: 13718
+      nodeMutations:
+        #2
+        - index: 2149
+          type: worldStaticMarkerNode
+          position: [-1358.57, 1731.12, 45.04, 0.0]
+          orientation: [0.0, 0.0, -0.673712, -0.738993]
+          scale: [1.0, 1.0, 1.0]
+        #1
+        - index: 3944
+          type: worldStaticMarkerNode
+          position: [-1761.12, 1858.82, 48.23, 0.0]
+          orientation: [0.0, 0.0, -0.51654, 0.8562588]
+          scale: [1.0, 1.0, 1.0]
     - path: base\worlds\03_night_city\_compiled\default\quest_4b1cab1036dcd59e.streamingsector
       expectedNodes: 148
       nodeMutations:
@@ -120,7 +244,7 @@ streaming:
           scale: [50.0, 50.0, 120.0]
         - index: 21
           type: worldTriggerAreaNode
-          position: [-1051.80505, -1440.09143, 29.3337135, 0.0]
+          position: [-1051.80505, -1440.09143, 19.3337135, 0.0]
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [120.0, 120.0, 80.0]
         - index: 78
