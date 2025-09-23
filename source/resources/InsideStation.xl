@@ -15,16 +15,16 @@ streaming:
         - index: 1506
           type: worldEntityNode
     # 4:Ellison Plaza
-    - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
-      expectedNodes: 3430
-      nodeDeletions:
-        - index: 927
-          type: worldEntityNode
-    - path: base\worlds\03_night_city\_compiled\default\exterior_-12_8_0_1.streamingsector
-      expectedNodes: 2548
-      nodeDeletions:
-        - index: 484
-          type: worldEntityProxyMeshNode
+    # - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
+    #   expectedNodes: 3430
+    #   nodeDeletions:
+    #     - index: 927
+    #       type: worldEntityNode
+    # - path: base\worlds\03_night_city\_compiled\default\exterior_-12_8_0_1.streamingsector
+    #   expectedNodes: 2548
+    #   nodeDeletions:
+    #     - index: 484
+    #       type: worldEntityProxyMeshNode
     #     - index: 2146
     #       type: worldInstancedMeshNode
     # - path: base\worlds\03_night_city\_compiled\default\exterior_-12_7_0_1.streamingsector
@@ -69,6 +69,85 @@ streaming:
       nodeDeletions:
         - index: 1026
           type: worldEntityNode
+        - index: 1159
+          type: worldStaticMeshNode
+        - index: 1160
+          type: worldStaticMeshNode
+        - index: 1777
+          type: worldInstancedMeshNode
+    # - path: base\worlds\03_night_city\_compiled\default\exterior_-25_-21_0_0.streamingsector
+    #   expectedNodes: 1869
+    #   nodeMutations:
+    #     - index: 1028
+    #       type: worldEntityNode
+    #       position: [-1598.708, -1316.629, 40.00, 0.0]
+    #       orientation: [0.0, 0.0, 1.0, 0.020]
+    #       scale: [1.0, 1.0, 1.0]
+    #     - index: 1029
+    #       type: worldEntityNode
+    #       position: [-1598.708, -1316.629, 40.00, 0.0]
+    #       orientation: [0.0, 0.0, 1.0, 0.020]
+    #       scale: [1.0, 1.0, 1.0]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-13_-11_0_1.streamingsector
+      expectedNodes: 2270
+      nodeDeletions:
+        - index: 2042
+          type: worldInstancedMeshNode
+        - index: 2044
+          type: worldInstancedMeshNode
+        - index: 2088
+          type: worldInstancedMeshNode
+        - index: 2115
+          type: worldInstancedMeshNode
+        - index: 2202
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions:
+            - index: 33
+        - index: 2213
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions:
+            - index: 56
+        - index: 2214
+          type: worldCollisionNode
+          expectedInstances: 106
+          instanceDeletions:
+            - index: 52
+            - index: 55
+        - index: 2218
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions:
+            - index: 47
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-7_-6_0_2.streamingsector
+      expectedNodes: 1430
+      nodeDeletions:
+        - index: 1348
+          type: worldInstancedMeshNode
+        - index: 1361
+          type: worldInstancedMeshNode
+        - index: 1412
+          type: worldCollisionNode
+          expectedInstances: 95
+          instanceDeletions:
+            - index: 88
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-4_-3_0_3.streamingsector
+      expectedNodes: 1145
+      nodeDeletions:
+        - index: 1031
+          type: worldStaticMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-26_-21_1_0.streamingsector
+      expectedNodes: 218
+      nodeDeletions:
+        - index: 189
+          type: worldInstancedMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-25_-21_1_0.streamingsector
+      expectedNodes: 214
+      nodeDeletions:
+        - index: 152
+          type: worldInstancedMeshNode
+
     # 14:Congress & MLK
     - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-6_0_0.streamingsector
       expectedNodes: 1024

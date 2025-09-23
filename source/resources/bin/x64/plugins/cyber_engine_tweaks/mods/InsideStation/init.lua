@@ -5,17 +5,17 @@
 --------------------------------------------------------
 
 Cron = require('External/Cron.lua')
-Data = require("Tools/data.lua")
-Def = require('Tools/def.lua')
+Data = require("Etc/data.lua")
+Def = require('Etc/def.lua')
 GameUI = require('External/GameUI.lua')
-Log = require("Tools/log.lua")
+Log = require("Etc/log.lua")
 
 local Core = require('Modules/core.lua')
 local Debug = require('Debug/debug.lua')
 
 InsideStation = {
 	description = "Inside The Station",
-	version = "1.1.2",
+	version = "2.0.0",
     is_debug_mode = false,
     -- version check
     cet_required_version = 36.0, -- 1.36.0
