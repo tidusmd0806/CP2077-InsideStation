@@ -1,6 +1,7 @@
 streaming:
   blocks:
     - its\new_ft_points.streamingblock
+    # - inside_station\all.streamingblock
   sectors:
     # 1:Elsenhowers st
     - path: base\worlds\03_night_city\_compiled\default\exterior_-28_29_0_0.streamingsector
@@ -95,6 +96,8 @@ streaming:
           type: worldInstancedMeshNode
         - index: 2044
           type: worldInstancedMeshNode
+        - index: 2064
+          type: worldInstancedMeshNode
         - index: 2088
           type: worldInstancedMeshNode
         - index: 2115
@@ -103,6 +106,18 @@ streaming:
           type: worldCollisionNode
           expectedInstances: 64
           instanceDeletions:
+            - index: 33
+        - index: 2210
+          type: worldCollisionNode
+          expectedInstances: 61
+          instanceDeletions:
+            - index: 22
+            - index: 23
+            - index: 25
+            - index: 27
+            - index: 29
+            - index: 30
+            - index: 31
             - index: 33
         - index: 2213
           type: worldCollisionNode
@@ -120,6 +135,16 @@ streaming:
           expectedInstances: 64
           instanceDeletions:
             - index: 47
+        - index: 2229
+          type: worldCollisionNode
+          expectedInstances: 39
+          instanceDeletions:
+            - index: 30
+            - index: 32
+            - index: 33
+            - index: 34
+            - index: 35
+            - index: 36
     - path: base\worlds\03_night_city\_compiled\default\exterior_-7_-6_0_2.streamingsector
       expectedNodes: 1430
       nodeDeletions:
@@ -137,6 +162,8 @@ streaming:
       nodeDeletions:
         - index: 1031
           type: worldStaticMeshNode
+        - index: 1046
+          type: worldInstancedOccluderNode
     - path: base\worlds\03_night_city\_compiled\default\exterior_-26_-21_1_0.streamingsector
       expectedNodes: 218
       nodeDeletions:
@@ -147,6 +174,11 @@ streaming:
       nodeDeletions:
         - index: 152
           type: worldInstancedMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-2_0_4.streamingsector
+      expectedNodes: 882
+      nodeDeletions:
+        - index: 811
+          type: worldInstancedOccluderNode
 
     # 14:Congress & MLK
     - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-6_0_0.streamingsector
@@ -376,3 +408,7 @@ streaming:
           position: [-1547.09253, -1946.0, 62.0186539, 0.0]
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [150.0, 150.0, 50.0]
+# resource:
+#   patch:
+#     inside_station/custom_devices.devices:
+#       - base\worlds\03_night_city\_compiled\default\03_night_city.devices

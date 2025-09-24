@@ -1,1 +1,1 @@
-{"streaming":{"blocks":["inside_station/all.streamingblock"]},"resource":{"patch":{"inside_station/custom_devices.devices":["base\\worlds\\03_night_city\\_compiled\\default\\03_night_city.devices"]}}}
+{"streaming":{"blocks":["inside_station/all.streamingblock"]},"resource":{"patch":{"inside_station/custom_devices.devices":["base\\worlds\\03_night_city\\_compiled\\default\\03_night_city.devices"],"inside_station/custom_devices.psrep":["base\\worlds\\03_night_city\\_compiled\\default\\03_night_city.psrep"]}}}
