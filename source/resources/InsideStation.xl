@@ -704,5 +704,7 @@ streaming:
           scale: [150.0, 150.0, 50.0]
 # resource:
 #   patch:
-#     inside_station/custom_devices.devices:
-#       - base\worlds\03_night_city\_compiled\default\03_night_city.devices
+# #     inside_station/custom_devices.devices:
+# #       - base\worlds\03_night_city\_compiled\default\03_night_city.devices
+#       inside_station/custom_devices.psrep:
+#         - base\worlds\03_night_city\_compiled\default\03_night_city.psrep
