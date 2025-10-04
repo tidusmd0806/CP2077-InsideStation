@@ -33,7 +33,7 @@ Data.EntryArea = {
     {st_id = 17, pos = {x = -130.78, y = 124.17, z = 12.39}, telepos = {x = -132.52, y = 122.88, z = 51.96}, tele_angle = {roll = 0, pitch = 0, yaw = -33.92}, r_1 = 4, r_2 = 10, is_choice_ui = true},
     {st_id = 17, pos = {x = -89.19, y = 89.17, z = 40.27}, telepos = {x = -132.52, y = 122.88, z = 51.96}, tele_angle = {roll = 0, pitch = 0, yaw = -33.92}, r_1 = 2, r_2 = 10, is_choice_ui = false},
     {st_id = 17, pos = {x = -94.96, y = 93.10, z = 40.27}, telepos = {x = -132.52, y = 122.88, z = 51.96}, tele_angle = {roll = 0, pitch = 0, yaw = -33.92}, r_1 = 2, r_2 = 10, is_choice_ui = false},
-    {st_id = 18, pos = {x = -1371.68, y = -647.66, z = 5.84}, telepos = {x = -1359.41, y = -642.30, z = 89.73}, tele_angle = {roll = 0, pitch = 0, yaw = -3.07}, r_1 = 2, r_2 = 10, is_choice_ui = true},
+    -- {st_id = 18, pos = {x = -1371.68, y = -647.66, z = 5.84}, telepos = {x = -1359.41, y = -642.30, z = 89.73}, tele_angle = {roll = 0, pitch = 0, yaw = -3.07}, r_1 = 2, r_2 = 10, is_choice_ui = true},
     -- {st_id = 19, pos = {x = -1537.96, y = -1951.55, z = 62.84}, telepos = {x = -1484.26, y = -1919.47, z = 74.57}, tele_angle = {roll = 0, pitch = 0, yaw = -23.27}, r_1 = 2, r_2 = 10, is_choice_ui = true},
 }
 
@@ -65,8 +65,8 @@ Data.ExitArea = {
     {st_id = 15, pos = {x = 183.08, y = -1190.36, z = 41.22}, telepos = {x = 170.39, y = -1180.59, z = 31.60}, tele_angle = {roll = 0, pitch = 0, yaw = 147.73}, r_1 = 2, r_2 = 15, is_choice_ui = true},
     {st_id = 15, pos = {x = 189.42, y = -1181.37, z = 41.22}, telepos = {x = 137.20, y = -1146.71, z = 31.60}, tele_angle = {roll = 0, pitch = 0, yaw = -31.98}, r_1 = 2, r_2 = 15, is_choice_ui = true},
     {st_id = 17, pos = {x = -135.56, y = 118.55, z = 51.95}, telepos = {x = -120.37, y = 116.80, z = 12.41}, tele_angle = {roll = 0, pitch = 0, yaw = -125.39}, r_1 = 4, r_2 = 15, is_choice_ui = false},
-    {st_id = 18, pos = {x = -1378.21, y = -646.06, z = 89.73}, telepos = {x = -1371.74, y = -656.70, z = 5.84}, tele_angle = {roll = 0, pitch = 0, yaw = -95.08}, r_1 = 2, r_2 = 15, is_choice_ui = false},
-    {st_id = 18, pos = {x = -1359.50, y = -646.69, z = 89.73}, telepos = {x = -1371.74, y = -656.70, z = 5.84}, tele_angle = {roll = 0, pitch = 0, yaw = -95.08}, r_1 = 2, r_2 = 15, is_choice_ui = false},
+    -- {st_id = 18, pos = {x = -1378.21, y = -646.06, z = 89.73}, telepos = {x = -1371.74, y = -656.70, z = 5.84}, tele_angle = {roll = 0, pitch = 0, yaw = -95.08}, r_1 = 2, r_2 = 15, is_choice_ui = false},
+    -- {st_id = 18, pos = {x = -1359.50, y = -646.69, z = 89.73}, telepos = {x = -1371.74, y = -656.70, z = 5.84}, tele_angle = {roll = 0, pitch = 0, yaw = -95.08}, r_1 = 2, r_2 = 15, is_choice_ui = false},
     -- {st_id = 19, pos = {x = -1484.26, y = -1919.47, z = 74.57}, telepos = {x = -1535.28, y = -1942.88, z = 62.84}, tele_angle = {roll = 0, pitch = 0, yaw = 67.80}, r_1 = 2, r_2 = 15, is_choice_ui = true},
     -- {st_id = 19, pos = {x = -1492.83, y = -1915.86, z = 74.57}, telepos = {x = -1535.28, y = -1942.88, z = 62.84}, tele_angle = {roll = 0, pitch = 0, yaw = 67.80}, r_1 = 2, r_2 = 15, is_choice_ui = true},
 }
