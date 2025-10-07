@@ -1050,7 +1050,7 @@ streaming:
           type: worldTriggerAreaNode
           position: [-1046.15662, -353.521027, -23.6815147, 0.0]
           orientation: [0.0, 0.0, -0.298354775, 0.954455137]
-          scale: [150.0, 150.0, 150.0]
+          scale: [50.0, 50.0, 150.0]
         - index: 27
           type: worldTriggerAreaNode
           position: [157.492188, -1182.30823, 31.5609627, 0.0]
