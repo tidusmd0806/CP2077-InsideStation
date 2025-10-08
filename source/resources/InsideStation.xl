@@ -16,16 +16,20 @@ streaming:
         - index: 1506
           type: worldEntityNode
     # 4:Ellison Plaza
-    # - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
-    #   expectedNodes: 3430
-    #   nodeDeletions:
-    #     - index: 927
-    #       type: worldEntityNode
-    # - path: base\worlds\03_night_city\_compiled\default\exterior_-12_8_0_1.streamingsector
-    #   expectedNodes: 2548
-    #   nodeDeletions:
-    #     - index: 484
-    #       type: worldEntityProxyMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
+      expectedNodes: 3430
+      nodeMutations:
+        - index: 927
+          type: worldEntityNode
+          position: [-1422.686, 1034.360, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.672, 0.741]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-12_8_0_1.streamingsector
+      expectedNodes: 2548
+      nodeMutations:
+        - index: 484
+          type: worldEntityProxyMeshNode
+          position: [-1422.686, 1034.360, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.672, 0.741]
     #     - index: 2146
     #       type: worldInstancedMeshNode
     # - path: base\worlds\03_night_city\_compiled\default\exterior_-12_7_0_1.streamingsector
@@ -67,7 +71,7 @@ streaming:
           type: worldGenericProxyMeshNode
           position: [-1215.483, -14.904, 40.0, 0.0]
           orientation: [0.0, 0.0, 0.980, -0.199]
-    - path: base\worlds\03_night_city\_compiled\default\interior_-2_-1_0_4.streamingsector
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-1_0_4.streamingsector
       expectedNodes: 1774
       nodeDeletions:
         - index: 595
@@ -1046,11 +1050,12 @@ streaming:
           position: [-1594.875, -1291.125, 49.8867188, 0.0]
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [50.0, 50.0, 120.0]
+        # 14
         - index: 48
           type: worldTriggerAreaNode
-          position: [-1046.15662, -353.521027, -23.6815147, 0.0]
+          position: [-1035.05, -362.66, 5.74, 0.0]
           orientation: [0.0, 0.0, -0.298354775, 0.954455137]
-          scale: [50.0, 50.0, 150.0]
+          scale: [60.0, 100.0, 150.0]
         - index: 27
           type: worldTriggerAreaNode
           position: [157.492188, -1182.30823, 31.5609627, 0.0]
