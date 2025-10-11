@@ -71,6 +71,68 @@ streaming:
           type: worldGenericProxyMeshNode
           position: [-1215.483, -14.904, 40.0, 0.0]
           orientation: [0.0, 0.0, 0.980, -0.199]
+    # Same with Inside Metro Mod
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_0_0_2.streamingsector
+      expectedNodes: 3350
+      nodeMutations:
+        - index: 3336
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceMutations:
+            - index: 13
+              position: [ -1139.199, 246.405, -3.812, 0.0 ]
+              orientation: [ 0.000, 0.000, 0.454, 0.891 ]
+        - index: 3339
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1238.437, 11.983, 80.778, 0.0 ]
+              orientation: [ 0.000, 0.000, -0.552, 0.834 ]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_0_0_3.streamingsector
+      expectedNodes: 2276
+      nodeMutations:
+        - index: 2133
+          type: worldCollisionNode
+          expectedInstances: 27
+          instanceMutations:
+            - index: 23
+              position: [ -1218.528, 85.768, 68.212, 0.0 ]
+              orientation: [ -0.590, 0.390, -0.390, 0.59]
+            - index: 25
+              position: [ -1171.973, 105.860, 68.212, 0.0 ]
+              orientation: [ 0.000, 0.000, 0.834, 0.552]
+            - index: 26
+              position: [ -1179.785, 109.079, 68.628, 0.0 ]
+              orientation: [ 0.000, 0.000, 0.834, 0.552]
+        - index: 2156
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1186.732, 109.017, 68.987, 0.0 ]
+              orientation: [ 0.000, 0.000, -0.552, 0.834 ]
+        - index: 2157
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1186.732, 109.017, 68.987, 0.0 ]
+              orientation: [ 0.000, 0.000, -0.552, 0.834 ]
+        - index: 2188
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1167.113, -20.796, 68.987, 0.0 ]
+              orientation: [ 0.000, 0.000, -0.552, 0.834 ]
+        - index: 2189
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1167.113, -20.796, 68.987, 0.0 ]
+              orientation: [ 0.000, 0.000, -0.552, 0.834 ]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-1_0_4.streamingsector
       expectedNodes: 1774
       nodeDeletions:
