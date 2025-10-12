@@ -992,6 +992,12 @@ streaming:
           position: [-1358.01, -637.63, 89.74, 0.0]
           orientation: [0.0, 0.0, -0.99980360, -0.0198186]
           scale: [1.0, 1.0, 1.0]
+        #14 {ue_metro_station_14_vista_del_rey_arrival}
+        - index: 3738
+          type: worldStaticMarkerNode
+          position: [-1040.73, -410.62, 100.27, 0.0]
+          orientation: [0.0, 0.0, 0.442081, 0.896974]
+          scale: [1.0, 1.0, 1.0]
         #6 {ue_metro_station_06_japan_town_south_arrival}
         - index: 7323
           type: worldStaticMarkerNode
@@ -1092,11 +1098,12 @@ streaming:
           position: [-1051.80505, -1440.09143, 19.3337135, 0.0]
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [120.0, 120.0, 80.0]
-        - index: 78
-          type: worldTriggerAreaNode
-          position: [-1455.60583, 458.800232, 4.8647337, 0.0]
-          orientation: [0.0, 0.0, 0.0, 1.0]
-          scale: [100.0, 100.0, 120.0]
+        # 10
+        # - index: 78
+        #   type: worldTriggerAreaNode
+        #   position: [-1455.60583, 458.800232, 4.8647337, 0.0]
+        #   orientation: [0.0, 0.0, 0.0, 1.0]
+        #   scale: [100.0, 100.0, 120.0]
         - index: 28
           type: worldTriggerAreaNode
           position: [-2106.5, -686.0, 6.5, 0.0]
@@ -1113,11 +1120,11 @@ streaming:
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [50.0, 50.0, 120.0]
         # 14
-        - index: 48
-          type: worldTriggerAreaNode
-          position: [-1035.05, -362.66, 5.74, 0.0]
-          orientation: [0.0, 0.0, -0.298354775, 0.954455137]
-          scale: [60.0, 100.0, 150.0]
+        # - index: 48
+        #   type: worldTriggerAreaNode
+        #   position: [-1035.05, -362.66, 5.74, 0.0]
+        #   orientation: [0.0, 0.0, -0.298354775, 0.954455137]
+        #   scale: [60.0, 100.0, 150.0]
         - index: 27
           type: worldTriggerAreaNode
           position: [157.492188, -1182.30823, 31.5609627, 0.0]
