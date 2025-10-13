@@ -56,6 +56,65 @@ streaming:
       nodeDeletions:
         - index: 336
           type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-6_1_0_2.streamingsector
+      expectedNodes: 1767
+      nodeDeletions:
+        - index: 1423
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 1602
+          type: worldCollisionNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-24_5_0_0.streamingsector
+      expectedNodes: 2167
+      nodeDeletions:
+        - index: 1238
+          type: worldStaticMeshNode
+        - index: 2021
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [1]
+        - index: 2114
+          type: worldInstancedMeshNode
+          expectedInstances: 8
+          instanceDeletions: [5]
+        - index: 2159
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [43,  44]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-12_2_0_1.streamingsector
+      expectedNodes: 1810
+      nodeDeletions:
+        - index: 627
+          type: worldStaticMeshNode
+        - index: 850
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [1]
+        - index: 1166
+          type: worldInstancedMeshNode
+          expectedInstances: 8
+          instanceDeletions: [5]
+    #     - index: 1176
+    #       type: worldInstancedMeshNode
+    #       expectedInstances: 9
+    #       instanceDeletions: [6]
+        - index: 1188
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [1]
+    #     - index: 1226
+    #       type: worldInstancedMeshNode
+    #       expectedInstances: 2
+    #       instanceDeletions: [0]
+    #     - index: 1249
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [1]
+    #     - index: 1724
+    #       type: worldInstancedMeshNode
+    #       expectedInstances: 2
+    #       instanceDeletions: [0]
     # 10:Memorial Park
     - path: base\worlds\03_night_city\_compiled\default\exterior_-19_-1_0_0.streamingsector
       expectedNodes: 582
@@ -71,7 +130,9 @@ streaming:
           type: worldGenericProxyMeshNode
           position: [-1215.483, -14.904, 40.0, 0.0]
           orientation: [0.0, 0.0, 0.980, -0.199]
+    #######################################
     # Same with Inside Metro Mod
+    ## 9 - 10
     - path: base\worlds\03_night_city\_compiled\default\exterior_-5_0_0_2.streamingsector
       expectedNodes: 3350
       nodeMutations:
@@ -133,6 +194,43 @@ streaming:
             - index: 0
               position: [ -1167.113, -20.796, 68.987, 0.0 ]
               orientation: [ 0.000, 0.000, -0.552, 0.834 ]
+    ## 10 - 14
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_-1_0_3.streamingsector
+      expectedNodes: 2207
+      nodeMutations:
+        - index: 2127
+          type: worldCollisionNode
+          expectedInstances: 30
+          instanceMutations:
+            - index: 27
+              position: [ -1212.337, -49.087, 68.535, 0.0 ]
+              orientation: [ 0.0, 0.0, -0.552, 0.834]
+        - index: 2170
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1205.994, -37.119, 72.689, 0.0 ]
+              orientation: [ 0.0, 0.0, -0.552, 0.834]
+        - index: 2171
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1205.994, -37.119, 72.689, 0.0 ]
+              orientation: [ 0.0, 0.0, -0.552, 0.834]
+
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-1_0_4.streamingsector
+      expectedNodes: 1774
+      nodeMutations:
+        - index: 1762
+          type: worldCollisionNode
+          expectedInstances: 1
+          instanceMutations:
+            - index: 0
+              position: [ -1185.241, -133.317, 68.383, 0.0 ]
+              orientation: [ 0.0, 0.0, 0.642, 0.766]
+    #######################################
     - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-1_0_4.streamingsector
       expectedNodes: 1774
       nodeDeletions:
@@ -200,6 +298,21 @@ streaming:
           type: worldCollisionNode
           expectedInstances: 120
           instanceDeletions: [119] # Important collision blocking for many colliders
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-11_-1_0_1.streamingsector
+      expectedNodes: 2161
+      nodeDeletions:
+        - index: 1086
+          type: worldStaticMeshNode
+        - index: 1087
+          type: worldStaticMeshNode
+        - index: 1088
+          type: worldStaticMeshNode
+        - index: 1089
+          type: worldStaticMeshNode
+        - index: 1887
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0, 1]
     # 11:Wellsprings
     - path: base\worlds\03_night_city\_compiled\default\exterior_-34_-11_0_0.streamingsector
       expectedNodes: 470
