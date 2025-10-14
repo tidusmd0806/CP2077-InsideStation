@@ -56,13 +56,20 @@ streaming:
       nodeDeletions:
         - index: 336
           type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-13_3_0_1.streamingsector
+      expectedNodes: 547
+      nodeDeletions:
+        - index: 527
+          type: worldCollisionNode
+          expectedInstances: 8
+          instanceDeletions: [0]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-6_1_0_2.streamingsector
       expectedNodes: 1767
       nodeDeletions:
-        - index: 1423
+        - index: 1412
           type: worldInstancedMeshNode
-          expectedInstances: 2
-          instanceDeletions: [1]
+          expectedInstances: 10
+          instanceDeletions: [4]
         - index: 1602
           type: worldCollisionNode
     - path: base\worlds\03_night_city\_compiled\default\exterior_-24_5_0_0.streamingsector
@@ -95,26 +102,13 @@ streaming:
           type: worldInstancedMeshNode
           expectedInstances: 8
           instanceDeletions: [5]
-    #     - index: 1176
-    #       type: worldInstancedMeshNode
-    #       expectedInstances: 9
-    #       instanceDeletions: [6]
         - index: 1188
           type: worldInstancedMeshNode
           expectedInstances: 4
-          instanceDeletions: [1]
-    #     - index: 1226
-    #       type: worldInstancedMeshNode
-    #       expectedInstances: 2
-    #       instanceDeletions: [0]
-    #     - index: 1249
+        - index: 1249
           type: worldInstancedMeshNode
           expectedInstances: 4
           instanceDeletions: [1]
-    #     - index: 1724
-    #       type: worldInstancedMeshNode
-    #       expectedInstances: 2
-    #       instanceDeletions: [0]
     # 10:Memorial Park
     - path: base\worlds\03_night_city\_compiled\default\exterior_-19_-1_0_0.streamingsector
       expectedNodes: 582
