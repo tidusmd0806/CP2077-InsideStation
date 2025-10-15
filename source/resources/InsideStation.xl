@@ -1205,12 +1205,12 @@ streaming:
           position: [-1051.80505, -1440.09143, 19.3337135, 0.0]
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [120.0, 120.0, 80.0]
-        # 10
-        # - index: 78
-        #   type: worldTriggerAreaNode
-        #   position: [-1455.60583, 458.800232, 4.8647337, 0.0]
-        #   orientation: [0.0, 0.0, 0.0, 1.0]
-        #   scale: [100.0, 100.0, 120.0]
+        # 9
+        - index: 78
+          type: worldTriggerAreaNode
+          position: [-1442.89, 460.83, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.0, 1.0]
+          scale: [30.0, 30.0, 100.0]
         - index: 28
           type: worldTriggerAreaNode
           position: [-2106.5, -686.0, 6.5, 0.0]
@@ -1226,12 +1226,6 @@ streaming:
           position: [-1594.875, -1291.125, 49.8867188, 0.0]
           orientation: [0.0, 0.0, 0.0, 1.0]
           scale: [50.0, 50.0, 120.0]
-        # 14
-        # - index: 48
-        #   type: worldTriggerAreaNode
-        #   position: [-1035.05, -362.66, 5.74, 0.0]
-        #   orientation: [0.0, 0.0, -0.298354775, 0.954455137]
-        #   scale: [60.0, 100.0, 150.0]
         - index: 27
           type: worldTriggerAreaNode
           position: [157.492188, -1182.30823, 31.5609627, 0.0]
