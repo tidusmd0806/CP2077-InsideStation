@@ -37,22 +37,6 @@ function Debug:SetObserver()
 
     if not self.is_set_observer then
         -- reserved
-        -- Observe("DataTerm", "OnAreaEnter", function(this, evt)
-        --     print("DataTerm OnAreaEnter")
-        --     -- print(evt.componentName)
-        --     -- this:OpenSubwayGate()
-        -- end)
-        -- Observe("FastTravelSystem", "QueueRequest", function(this, evt)
-        --     print("FastTravelSystem QueueRequest")
-        --     print(evt:ToString())
-        -- end)
-        -- Observe("QuestsSystem", "SetFact", function(this, factName, value)
-        --     if string.find(factName.value, "ue_metro") then
-        --         print('SetFact')
-        --         print(factName.value)
-        --         print(value)
-        --     end
-        -- end)
     end
     self.is_set_observer = true
 
@@ -125,9 +109,11 @@ function Debug:ImGuiLineInfo()
     self.is_im_gui_line_info = ImGui.Checkbox("[ImGui] Line Info", self.is_im_gui_line_info)
     if self.is_im_gui_line_info then
         local active_station = Game.GetQuestsSystem():GetFact(CName.new("ue_metro_active_station"))
+        local active_platform = Game.GetQuestsSystem():GetFact(CName.new("ue_metro_active_station_platform"))
         local next_station = Game.GetQuestsSystem():GetFact(CName.new("ue_metro_next_station"))
         local line = Game.GetQuestsSystem():GetFact(CName.new("ue_metro_track_selected"))
         ImGui.Text("Activate Station : " .. active_station)
+        ImGui.Text("Activate Platform : " .. active_platform)
         ImGui.Text("Next Station : " .. next_station)
         ImGui.Text("Line : " .. line)
     end
