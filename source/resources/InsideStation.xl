@@ -1226,6 +1226,12 @@ streaming:
           position: [-2068.57, 479.28, 74.78, 0.0]
           orientation: [0.0, 0.0, -0.70482623, 0.70938]
           scale: [1.0, 1.0, 1.0]
+        #9 {ue_metro_station_09_city_center_arrival}
+        - index: 8998
+          type: worldStaticMarkerNode
+          position: [-1422.19, 468.99, 51.83, 0.0]
+          orientation: [0.0, 0.0, 0.679205119, 0.733948]
+          scale: [1.0, 1.0, 1.0]
         #16 {ue_metro_station_16_little_china_megabuilding_arrival}
         - index: 12722
           type: worldStaticMarkerNode
