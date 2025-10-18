@@ -1,3 +1,4 @@
+# InsideStation.xl v2.2.0
 streaming:
   blocks:
     - its\new_ft_points.streamingblock
@@ -37,6 +38,47 @@ streaming:
     #   nodeDeletions:
     #     - index: 1205
     #       type: worldCollisionNode
+    # 7:Alexander st
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_0_0_4.streamingsector
+      expectedNodes: 1639
+      nodeDeletions:
+        - index: 712
+          type: worldStaticOccluderMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_0_0_3.streamingsector
+      expectedNodes: 1339
+      nodeDeletions:
+        - index: 381
+          type: worldStaticOccluderMeshNode
+        - index: 913
+          type: worldInstancedOccluderNode
+          expectedInstances: 5
+          instanceDeletions: [0]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-8_1_0_2.streamingsector
+      expectedNodes: 3220
+      nodeDeletions:
+        - index: 1403
+          type: worldStaticMeshNode
+        - index: 1410
+          type: worldStaticMeshNode
+        - index: 2489
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_1_0_2.streamingsector
+      expectedNodes: 2122
+      nodeDeletions:
+        - index: 1925
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [1, 2]
+        - index: 1982
+          type: worldInstancedMeshNode
+          expectedInstances: 16
+          instanceDeletions: [1, 7, 11, 15]
+        - index: 1984
+          type: worldInstancedMeshNode
+          expectedInstances: 20
+          instanceDeletions: [14, 19]
     # 8:Wollesen st
     - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-23_0_0.streamingsector
       expectedNodes: 1027
