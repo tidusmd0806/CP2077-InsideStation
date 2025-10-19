@@ -44,6 +44,13 @@ streaming:
       nodeDeletions:
         - index: 712
           type: worldStaticOccluderMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-4_0_0_3.streamingsector
+      expectedNodes: 2236
+      nodeDeletions:
+        - index: 2202
+          type: worldCollisionNode
+          expectedInstances: 88
+          instanceDeletions: [82]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-5_0_0_3.streamingsector
       expectedNodes: 1339
       nodeDeletions:
@@ -63,6 +70,14 @@ streaming:
         - index: 2489
           type: worldInstancedMeshNode
           expectedInstances: 2
+          instanceDeletions: [0, 1]
+        - index: 2525
+          type: worldInstancedMeshNode
+          expectedInstances: 8
+          instanceDeletions: [3, 5, 7]
+        - index: 3174
+          type: worldCollisionNode
+          expectedInstances: 1
           instanceDeletions: [0]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-9_1_0_2.streamingsector
       expectedNodes: 2122
@@ -79,6 +94,45 @@ streaming:
           type: worldInstancedMeshNode
           expectedInstances: 20
           instanceDeletions: [14, 19]
+        - index: 2039
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [47]
+        - index: 2042
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [48]
+        - index: 2118
+          type: worldCollisionNode
+          expectedInstances: 71
+          instanceDeletions: [10]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-17_3_0_1.streamingsector
+      expectedNodes: 2361
+      nodeDeletions:
+        - index: 1505
+          type: worldInstancedMeshNode
+          expectedInstances: 7
+          instanceDeletions: [5]
+        - index: 2273
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [31, 35]
+        - index: 2355
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [3, 56, 59, 61, 63]
+      nodeMutations:
+        - index: 334
+          type: worldEntityProxyMeshNode
+          position: [-2064.192, 474.304, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-33_7_1_0.streamingsector
+      expectedNodes: 285
+      nodeMutations:
+        - index: 156
+          type: worldEntityNode
+          position: [-2064.192, 474.304, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
     # 8:Wollesen st
     - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-23_0_0.streamingsector
       expectedNodes: 1027
