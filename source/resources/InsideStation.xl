@@ -122,16 +122,40 @@ streaming:
           expectedInstances: 64
           instanceDeletions: [3, 56, 59, 61, 63]
       nodeMutations:
+        - index: 333
+          type: worldEntityProxyMeshNode
+          position: [-2064.192, 482.604, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
         - index: 334
           type: worldEntityProxyMeshNode
           position: [-2064.192, 474.304, 0.0, 0.0]
           orientation: [0.0, 0.0, -0.707, 0.707]
+        - index: 336
+          type: worldEntityProxyMeshNode
+          position: [-2064.192, 490.654, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
+        - index: 338
+          type: worldEntityProxyMeshNode
+          position: [-2064.192, 499.054, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-33_7_1_0.streamingsector
       expectedNodes: 285
       nodeMutations:
+        - index: 154
+          type: worldEntityNode
+          position: [-2064.192, 490.654, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
+        - index: 155
+          type: worldEntityNode
+          position: [-2064.192, 482.604, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
         - index: 156
           type: worldEntityNode
           position: [-2064.192, 474.304, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.707, 0.707]
+        - index: 157
+          type: worldEntityNode
+          position: [-2064.192, 499.054, 0.0, 0.0]
           orientation: [0.0, 0.0, -0.707, 0.707]
     # 8:Wollesen st
     - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-23_0_0.streamingsector
