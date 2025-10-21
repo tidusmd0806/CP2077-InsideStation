@@ -5,11 +5,72 @@ streaming:
     - inside_station\all.streamingblock
   sectors:
     # 1:Elsenhowers st
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-14_14_0_1.streamingsector
+      expectedNodes: 1147
+      nodeDeletions:
+        - index: 358
+          type: worldStaticOccluderMeshNode
     - path: base\worlds\03_night_city\_compiled\default\exterior_-28_29_0_0.streamingsector
       expectedNodes: 604
       nodeDeletions:
         - index: 432
           type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-4_3_0_3.streamingsector
+      expectedNodes: 2257
+      nodeDeletions:
+        - index: 2229
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [96, 121]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-14_14_0_1.streamingsector
+      expectedNodes: 1147
+      nodeDeletions:
+        - index: 781
+          type: worldInstancedOccluderNode
+          expectedInstances: 5
+          instanceDeletions: [4]
+        - index: 879
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 881
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [3]
+        - index: 892
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [1, 2]
+        - index: 912
+          type: worldInstancedMeshNode
+          expectedInstances: 10
+          instanceDeletions: [6, 7, 8, 9]
+    - path: base\worlds\03_night_city\_compiled\default\interior_-28_29_0_1.streamingsector
+      expectedNodes: 59
+      nodeDeletions:
+        - index: 34
+          type: worldStaticMeshNode
+        # - index: 42
+        #   type: worldInstancedMeshNode
+        #   expectedInstances: 5
+        #   instanceDeletions: [1]
+        - index: 53
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [30]
+    - path: base\worlds\03_night_city\_compiled\default\interior_-7_7_0_3.streamingsector
+      expectedNodes: 29
+      nodeDeletions:
+        - index: 18
+          type: worldStaticMeshNode
+        # - index: 21
+        #   type: worldInstancedMeshNode
+        #   expectedInstances: 3
+        #   instanceDeletions: [1]
+        - index: 25
+          type: worldCollisionNode
+          expectedInstances: 2
+          instanceDeletions: [0]
     # 3:Farrier Ferguson
     - path: base\worlds\03_night_city\_compiled\default\exterior_-26_23_0_0.streamingsector
       expectedNodes: 2833
