@@ -112,11 +112,61 @@ streaming:
           expectedInstances: 2
           instanceDeletions: [0]
     # 3:Farrier Ferguson
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-7_5_0_2.streamingsector
+      expectedNodes: 1525
+      nodeDeletions:
+        - index: 727
+          type: worldStaticOccluderMeshNode
     - path: base\worlds\03_night_city\_compiled\default\exterior_-26_23_0_0.streamingsector
       expectedNodes: 2833
       nodeDeletions:
         - index: 1506
           type: worldEntityNode
+        - index: 1996
+          type: worldStaticMeshNode
+        - index: 2447
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [0, 1]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-13_11_0_1.streamingsector
+      expectedNodes: 2046
+      nodeDeletions:
+        - index: 1312
+          type: worldInstancedOccluderNode
+          expectedInstances: 5
+          instanceDeletions: [4]
+        - index: 1316
+          type: worldInstancedMeshNode
+          expectedInstances: 5
+          instanceDeletions: [1]
+        - index: 1321
+          type: worldInstancedMeshNode
+          expectedInstances: 7
+          instanceDeletions: [0, 2, 4]
+        - index: 1592
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 1610
+          type: worldInstancedMeshNode
+          expectedInstances: 13
+          instanceDeletions: [8, 9, 10, 11]
+        - index: 1613
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [1, 2]
+        - index: 1624
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [3]
+        - index: 1970
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [37]
+        - index: 1994
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [23, 24]
     # 4:Ellison Plaza
     - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
       expectedNodes: 3430
