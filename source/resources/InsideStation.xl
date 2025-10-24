@@ -1209,6 +1209,10 @@ streaming:
           type: worldInstancedMeshNode
           expectedInstances: 4
           instanceDeletions: [3]
+        - index: 2261
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0,1]
         - index: 3996
           type: worldCollisionNode
           expectedInstances: 128
