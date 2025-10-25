@@ -10,7 +10,7 @@ function Core:New()
     obj.log_obj:SetLevel(LogLevel.Info, "Core")
     obj.hud_obj = HUD:New()
     -- static --
-    obj.area_check_interval = 0.2
+    obj.area_check_interval = 1
     obj.mappin_check_interval = 2
     obj.teleport_resolution = 0.01
     obj.teleport_division_num = 30
@@ -43,12 +43,30 @@ function Core:Initialize()
     end)
 
     Observe("DataTerm", "OnAreaEnter", function(this, evt)
-        self.log_obj:Record(LogLevel.Info, "DataTerm OnAreaEnter")
+        self.log_obj:Record(LogLevel.Trace, "DataTerm OnAreaEnter")
+        local tags = this.tags.tags
+        if tags ~= nil and #tags > 0 then
+            local tag_str = ""
+            tag_str = tags[1].value
+            if tag_str == "MetroGateNoOpen" then
+                self.log_obj:Record(LogLevel.Trace, "MetroGateNoOpen tag detected, skipping gate open")
+                return
+            end
+        end
         this:OpenSubwayGate()
     end)
 
     Observe("DataTerm", "OnAreaExit", function(this, evt)
-        self.log_obj:Record(LogLevel.Info, "DataTerm OnAreaExit")
+        self.log_obj:Record(LogLevel.Trace, "DataTerm OnAreaExit")
+        local tags = this.tags.tags
+        if tags ~= nil and #tags > 0 then
+            local tag_str = ""
+            tag_str = tags[1].value
+            if tag_str == "MetroGateNoOpen" then
+                self.log_obj:Record(LogLevel.Trace, "MetroGateNoOpen tag detected, skipping gate close")
+                return
+            end
+        end
         this:CloseSubwayGate()
     end)
 
