@@ -1133,7 +1133,7 @@ streaming:
         - index: 641
           type: worldEntityNode
       nodeMutations:
-        - index: 649
+        - index: 647
           type: worldEntityNode
           position: [-1560.390, -653.359, 0.0, 0.0]
           orientation: [0.0, 0.0, 1.0, 0.018]
@@ -1229,6 +1229,10 @@ streaming:
           type: worldCollisionNode
           expectedInstances: 64
           instanceDeletions: [13]
+        - index: 2966
+          type: worldCollisionNode
+          expectedInstances: 50
+          instanceDeletions: [13, 14, 16, 35]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-13_-5_0_1.streamingsector
       expectedNodes: 2142
       nodeDeletions:
