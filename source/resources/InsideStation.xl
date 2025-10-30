@@ -1144,6 +1144,8 @@ streaming:
     - path: base\worlds\03_night_city\_compiled\default\exterior_-25_-10_1_0.streamingsector
       expectedNodes: 234
       nodeDeletions:
+        - index: 69
+          type: worldStaticDecalNode
         - index: 79
           type: worldEntityNode
         - index: 80
@@ -1152,14 +1154,34 @@ streaming:
           type: worldEntityNode
         - index: 82
           type: worldEntityNode
+        - index: 105
+          type: worldStaticMeshNode
+        - index: 106
+          type: worldStaticMeshNode
         - index: 116
           type: worldStaticMeshNode
         - index: 117
           type: worldStaticMeshNode
-        - index: 188
+        - index: 177
           type: worldInstancedMeshNode
           expectedInstances: 2
           instanceDeletions: [0, 1]
+        - index: 178
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [2]
+        - index: 179
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [2]
+        - index: 180
+          type: worldInstancedMeshNode
+          expectedInstances: 6
+          dinstanceDeletions: [1, 2, 4, 5]
+        - index: 188
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [2]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-7_-3_0_2.streamingsector
       expectedNodes: 2899
       nodeDeletions:
@@ -1172,7 +1194,7 @@ streaming:
         - index: 2652
           type: worldInstancedMeshNode
           expectedInstances: 4
-          instanceDeletions: [1, 3]
+          instanceDeletions: [0, 1, 2, 3]
         - index: 2658
           type: worldInstancedMeshNode
           expectedInstances: 3
@@ -1189,6 +1211,10 @@ streaming:
           type: worldInstancedMeshNode
           expectedInstances: 12
           instanceDeletions: [2, 5, 7, 8, 10]
+        - index: 2843
+          type: worldCollisionNode
+          expectedInstances: 30
+          instanceDeletions: [29]
         - index: 2868
           type: worldCollisionNode
           expectedInstances: 128
@@ -1196,7 +1222,7 @@ streaming:
         - index: 2869
           type: worldCollisionNode
           expectedInstances: 122
-          instanceDeletions: [34, 35, 36, 37, 43, 46, 47, 48, 50, 52, 53, 88, 92, 93, 108]
+          instanceDeletions: [34, 35, 36, 37, 43, 46, 47, 48, 50, 52, 53, 88, 91, 92, 93, 96, 108]
       nodeMutations:
         - index: 106
           type: worldGenericProxyMeshNode
