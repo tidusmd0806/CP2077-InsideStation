@@ -1619,6 +1619,8 @@ streaming:
           type: worldStaticMeshNode
         - index: 1013
           type: worldStaticMeshNode
+        - index: 1014
+          type: worldStaticMeshNode
         - index: 1015
           type: worldStaticMeshNode
         - index: 1046
@@ -1635,6 +1637,18 @@ streaming:
           type: worldInstancedOccluderNode
           expectedInstances: 4
           instanceDeletions: [0, 2]
+        - index: 1493
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 1497
+          type: worldInstancedMeshNode
+          expectedInstances: 5
+          instanceDeletions: [4]
+        - index: 1498
+          type: worldInstancedMeshNode
+          expectedInstances: 21
+          instanceDeletions: [16]
         - index: 1504
           type: worldInstancedMeshNode
           expectedInstances: 3
@@ -1659,10 +1673,26 @@ streaming:
           type: worldInstancedMeshNode
           expectedInstances: 2
           instanceDeletions: [0, 1]
+        - index: 1594
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 1595
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 1596
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
         - index: 1609
           type: worldInstancedMeshNode
           expectedInstances: 4
           instanceDeletions: [0, 1]
+        - index: 1628
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [0, 1, 2]
         - index: 1629
           type: worldInstancedMeshNode
           expectedInstances: 3
@@ -1671,15 +1701,63 @@ streaming:
           type: worldInstancedMeshNode
           expectedInstances: 4
           instanceDeletions: [0, 1, 2, 3]
+        - index: 1673
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0, 1]
+        - index: 1674
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0, 1]
         - index: 1804
           type: worldCollisionNode
           expectedInstances: 128
-          instanceDeletions: [87]
+          instanceDeletions: [84, 87]
       nodeMutations:
+        - index: 369
+          type: worldGenericProxyMeshNode
+          position: [173.759, -1173.493, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
+        - index: 370
+          type: worldGenericProxyMeshNode
+          position: [134.643, -1146.829, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
+        - index: 371
+          type: worldGenericProxyMeshNode
+          position: [137.923, -1149.057, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
+        - index: 372
+          type: worldGenericProxyMeshNode
+          position: [172.750, -1180.674, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.294, -0.956]
+        - index: 373
+          type: worldGenericProxyMeshNode
+          position: [133.532, -1154.053, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.294, -0.956]
+        - index: 382
+          type: worldGenericProxyMeshNode
+          position: [177.039, -1175.720, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
+        - index: 383
+          type: worldGenericProxyMeshNode
+          position: [130.253, -1151.825, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.294, -0.956]
+        - index: 389
+          type: worldGenericProxyMeshNode
+          position: [169.470, -1178.446, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.294, -0.956]
+        - index: 403
+          type: worldGenericProxyMeshNode
+          position: [183.553, -1190.575, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.884, -0.468]
+        - index: 418
+          type: worldGenericProxyMeshNode
+          position: [183.553, -1190.575, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.884, -0.468]
         - index: 512
           type: worldEntityProxyMeshNode
           position: [172.750, -1180.674, 0.0, 0.0]
-          orientation: [0.0, 0.0, 0.294, -0.956]
+          sorientation: [0.0, 0.0, 0.294, -0.956]
         - index: 518
           type: worldEntityProxyMeshNode
           position: [169.470, -1178.446, 0.0, 0.0]
@@ -1687,10 +1765,23 @@ streaming:
     - path: base\worlds\03_night_city\_compiled\default\exterior_0_-5_0_2.streamingsector
       expectedNodes: 2711
       nodeDeletions:
+        - index: 2694
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [108]
         - index: 2710
           type: worldCollisionNode
           expectedInstances: 128
-          instanceDeletionss: [77]
+          instanceDeletions: [77]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_0_-3_0_3.streamingsector
+      expectedNodes: 1351
+      nodeDeletions:
+        - index: 679
+          type: worldStaticOccluderMeshNode
+        - index: 1322
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [119]
     - path: base\worlds\03_night_city\_compiled\default\exterior_0_-2_0_4.streamingsector
       expectedNodes: 457
       nodeDeletions:
@@ -1705,13 +1796,81 @@ streaming:
           type: worldInstancedOccluderNode
           expectedInstances: 3
           instanceDeletions: [2]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_2_-18_0_0.streamingsector
+      expectedNodes: 1620
+      nodeMutations:
+        - index: 866
+          type: worldEntityNode
+          position: [134.643, -1146.829, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
+        - index: 867
+          type: worldEntityNode
+          position: [137.923, -1149.057, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
+        - index: 868
+          type: worldEntityNode
+          position: [130.253, -1151.825, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.294, -0.956]
     - path: base\worlds\03_night_city\_compiled\default\exterior_2_-19_0_0.streamingsector
       expectedNodes: 2856
+      nodeDeletions:
+        - index: 712
+          type: worldStaticDecalNode
+        - index: 713
+          type: worldStaticDecalNode
+        - index: 714
+          type: worldStaticDecalNode
+        - index: 715
+          type: worldStaticDecalNode
+        - index: 716
+          type: worldStaticDecalNode
+        - index: 717
+          type: worldStaticDecalNode
+        - index: 718
+          type: worldStaticDecalNode
+        - index: 719
+          type: worldStaticDecalNode
+        - index: 720
+          type: worldStaticDecalNode
+        - index: 721
+          type: worldStaticDecalNode
+        - index: 722
+          type: worldStaticDecalNode
+        - index: 723
+          type: worldStaticDecalNode
+        - index: 724
+          type: worldStaticDecalNode
+        - index: 725
+          type: worldStaticDecalNode
+        - index: 726
+          type: worldStaticDecalNode
+        - index: 727
+          type: worldStaticDecalNode
       nodeMutations:
+        - index: 1563
+          type: worldEntityNode
+          position: [183.553, -1190.575, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.884, -0.468]
+        - index: 1564
+          type: worldEntityNode
+          position: [189.806, -1181.645, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.884, -0.468]
+        - index: 1710
+          type: worldEntityNode
+          position: [173.759, -1173.493, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
         - index: 1711
           type: worldEntityNode
           position: [172.750, -1180.674, 0.0, 0.0]
           orientation: [0.0, 0.0, 0.294, -0.956]
+        - index: 1712
+          type: worldEntityNode
+          position: [133.532, -1154.053, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.294, -0.956]
+        - index: 1713
+          type: worldEntityNode
+          position: [177.039, -1175.720, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.965, 0.294]
         - index: 1714
           type: worldEntityNode
           position: [169.470, -1178.446, 0.0, 0.0]
