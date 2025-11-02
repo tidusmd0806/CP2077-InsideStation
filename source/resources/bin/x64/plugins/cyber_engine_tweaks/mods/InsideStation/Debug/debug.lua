@@ -37,30 +37,6 @@ function Debug:SetObserver()
 
     if not self.is_set_observer then
         -- reserved
-    Observe("SecurityAreaControllerPS", "AreaEntered",
-    ---@param this SecurityAreaControllerPS
-    ---@param evt AreaEnteredEvent
-    function(this, evt)
-        -- method has just been called
-        print("Observer AreaEntered Event Triggered")
-        print(evt.activatorID)
-        print(evt.worldPosition.x .. ", " .. evt.worldPosition.y .. ", " .. evt.worldPosition.z)
-        print(evt.activator:GetEntity())
-        -- print(this:GetDeviceName())
-        this:SetSecurityAreaType(ESecurityAreaType.DANGEROUS, false)
-        local event = SetSecuritySystemState.new()
-        event.state = ESecuritySystemState.COMBAT
-        this:GetSecuritySystem():QuestChangeSecuritySystemState(event)
-        -- local event = QuestCombatActionAreaNotification.new()
-        -- event.revealPlayerSettings.revealPlayer = ERevealPlayerType.REVEAL_ONCE
-        -- event.revealPlayerSettings.revealPlayerOutsideSecurityPerimeter = true
-        -- this:OnQuestCombatActionAreaNotification(event)
-        local event = QuestCombatActionNotification.new()
-        this:GetSecuritySystem():QuestCombatActionNotification(event)
-        print("Observer AreaEntered Event End")
-    end)
-
-
     end
     self.is_set_observer = true
 

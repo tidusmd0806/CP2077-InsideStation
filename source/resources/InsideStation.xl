@@ -327,6 +327,9 @@ streaming:
           instanceDeletions: [57]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-23_16_0_0.streamingsector
       expectedNodes: 3430
+      nodeDeletions:
+        - index: 531
+          type: worldStaticDecalNode
       nodeMutations:
         - index: 887
           type: worldEntityNode
@@ -1527,6 +1530,8 @@ streaming:
           type: worldDynamicMeshNode
         - index: 40
           type: worldDynamicMeshNode
+        - index: 132
+          type: worldStaticDecalNode
         - index: 143
           type: worldInstancedDestructibleMeshNode
         - index: 144
@@ -1542,6 +1547,10 @@ streaming:
         - index: 365
           type: worldInstancedMeshNode
       nodeMutations:
+        - index: 129
+          type: worldStaticDecalNode
+          position: [-1046.092, -401.793, 105.525, 0.0]
+          orientation: [-0.631, -0.319, -0.319, -0.631]
         - index: 163
           type: worldEntityNode
           position: [-1045.141, -399.355, 0.0, 0.0]
