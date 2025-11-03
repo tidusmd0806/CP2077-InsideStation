@@ -1,15 +1,13 @@
 local Debug = {}
 Debug.__index = Debug
 
-function Debug:New(core_obj)
+function Debug:New()
     local obj = {}
-    obj.core_obj = core_obj
 
     -- set parameters
     obj.is_im_gui_player_local = false
     obj.is_set_observer = false
     obj.is_im_gui_line_info = false
-    obj.is_im_gui_station_info = false
     obj.is_im_gui_measurement = false
     obj.is_im_gui_ristrict = false
     return setmetatable(obj, self)
@@ -25,7 +23,6 @@ function Debug:ImGuiMain()
     self:SelectPrintDebug()
     self:ImGuiPlayerPosition()
     self:ImGuiLineInfo()
-    self:ImGuiStationInfo()
     self:ImGuiMeasurement()
     self:ImGuiExcuteFunction()
 
@@ -119,14 +116,6 @@ function Debug:ImGuiLineInfo()
     end
 end
 
-function Debug:ImGuiStationInfo()
-    self.is_im_gui_station_info = ImGui.Checkbox("[ImGui] Station Info", self.is_im_gui_station_info)
-    if self.is_im_gui_station_info then
-        local telep_area_type = self.core_obj.hud_obj.teleport_area_type
-        ImGui.Text("Teleport Area Type : " .. telep_area_type)
-    end
-end
-
 function Debug:ImGuiMeasurement()
     self.is_im_gui_measurement = ImGui.Checkbox("[ImGui] Measurement", self.is_im_gui_measurement)
     if self.is_im_gui_measurement then
@@ -166,11 +155,6 @@ function Debug:ImGuiExcuteFunction()
             end
         end
         print("Excute Test Function 1")
-    end
-    ImGui.SameLine()
-    if ImGui.Button("TF2") then
-        InsideStation.core_obj.hud_obj:SetChoice(Def.ChoiceVariation.Enter)
-        print("Excute Test Function 2")
     end
 end
 
