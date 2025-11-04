@@ -140,6 +140,14 @@ streaming:
     - path: base\worlds\03_night_city\_compiled\default\exterior_-22_27_0_0.streamingsector
       expectedNodes: 889
       nodeMutations:
+        - index: 421
+          type: worldEntityNode
+          position: [-1364.527, 1732.668, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 422
+          type: worldEntityNode
+          position: [-1364.177, 1736.670, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
         - index: 424
           type: worldEntityNode
           position: [-1405.866, 1766.338, 0.0, 0.0]
@@ -173,6 +181,14 @@ streaming:
         - index: 241
           type: worldGenericProxyMeshNode
           position: [-1366.357, 1711.750, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 242
+          type: worldGenericProxyMeshNode
+          position: [-1364.177, 1736.670, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 243
+          type: worldGenericProxyMeshNode
+          position: [-1364.527, 1732.668, 0.0, 0.0]
           orientation: [0.0, 0.0, 0.737, -0.676]
         - index: 328
           type: worldEntityProxyMeshNode
