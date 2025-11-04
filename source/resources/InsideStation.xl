@@ -191,7 +191,7 @@ streaming:
       nodeDeletions:
         - index: 1222
           type: worldCollisionNode
-          expectedNodes: 22
+          expectedInstances: 22
           instanceDeletions: [12]
       nodeMutations:
         - index: 247
