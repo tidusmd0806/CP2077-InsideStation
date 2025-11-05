@@ -668,6 +668,108 @@ streaming:
           type: worldEntityProxyMeshNode
           position: [-1445.440, 1015.821, 0.0, 0.0]
           orientation: [0.0, 0.0, -0.737, 0.676]
+    # 5:Monroe & Sagan
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_17_0_0.streamingsector
+      expectedNodes: 806
+      nodeDeletions:
+        - index: 567
+          type: worldInstancedOccluderNode
+          expectedInstances: 6
+          instanceDeletions: [2]
+        - index: 753
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [53]
+      nodeMutations:
+        - index: 380
+          type: worldEntityNode
+          position: [-519.306, 1115.543, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.887, -0.462]
+        # - index: 381
+        #   type: worldEntityNode
+        #   position: [-516.018, 1120.240, 0.0, 0.0]
+        #   orientation: [0.0, 0.0, 0.887, -0.462] 
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_4_0_2.streamingsector
+      expectedNodes: 1595
+      nodeMutations:
+        # - index: 95
+        #   type: worldGenericProxyMeshNode
+        #   position: [-516.018, 1120.240, 0.0, 0.0]
+        #   orientation: [0.0, 0.0, 0.887, -0.462] 
+        - index: 103
+          type: worldGenericProxyMeshNode
+          position: [-519.306, 1115.543, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.887, -0.462]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_17_1_0.streamingsector
+      expectedNodes: 145
+      nodeMutations:
+        - index: 40
+          type: worldEntityNode
+          position: [-524.023, 1139.179, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.284, -0.959]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_4_0_2.streamingsector
+      expectedNodes: 1595
+      nodeDeletions:
+        - index: 1322
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [1]
+        - index: 1329
+          type: worldInstancedMeshNode
+          expectedInstances: 12
+          instanceDeletions: [4]
+      nodeMutations:
+        - index: 91
+          type: worldGenericProxyMeshNode
+          position: [-524.023, 1139.179, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.284, -0.959] 
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_8_0_1.streamingsector
+      expectedNodes: 2053
+      nodeDeletions:
+        - index: 941
+          type: worldStaticMeshNode
+        - index: 1699
+          type: worldInstancedMeshNode
+          expectedInstances: 10
+          instanceDeletions: [1]
+        - index: 2033
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [31]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-1_2_0_3.streamingsector
+      expectedNodes: 1509
+      nodeDeletions:
+        - index: 1065
+          type: worldStaticMeshNode
+        - index: 1066
+          type: worldStaticMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_8_0_1.streamingsector
+      expectedNodes: 2053
+      nodeDeletions:
+        - index: 1699
+          type: worldInstancedMeshNode
+          expectedInstances: 10
+          instanceDeletions: [4]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_2_0_3.streamingsector
+      expectedNodes: 1511
+      nodeDeletions:
+        - index: 1141
+          type: worldInstancedOccluderNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-1_1_0_4.streamingsector
+      expectedNodes: 1093
+      nodeDeletions:
+        - index: 256
+          type: worldStaticOccluderMeshNode
+        - index: 979
+          type: worldInstancedOccluderNode
+          expectedInstances: 6
+          instanceDeletions: [0]
+        - index: 1038
+          type: worldInstancedOccluderNode
+          expectedInstances: 12
+          instanceDeletions: [7]
 
     # 7:Alexander st
     - path: base\worlds\03_night_city\_compiled\default\exterior_-2_0_0_4.streamingsector
