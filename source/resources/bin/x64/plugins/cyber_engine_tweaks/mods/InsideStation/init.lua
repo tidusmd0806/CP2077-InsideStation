@@ -4,13 +4,8 @@
 -- https://opensource.org/licenses/mit-license.php
 --------------------------------------------------------
 
-Cron = require('External/Cron.lua')
-Data = require("Etc/data.lua")
-Def = require('Etc/def.lua')
-GameUI = require('External/GameUI.lua')
 Log = require("Etc/log.lua")
 
-local Core = require('Modules/core.lua')
 local Debug = require('Debug/debug.lua')
 
 InsideStation = {
@@ -28,12 +23,10 @@ registerForEvent('onInit', function()
         return
     end
 
-    -- InsideStation.core_obj = Core:New()
     InsideStation.debug_obj = Debug:New()
     InsideStation.log_obj = Log:New()
-    InsideStation.log_obj:SetLevel(LogLevel.Info, "Core")
+    InsideStation.log_obj:SetLevel(LogLevel.Info, "Main")
 
-    -- InsideStation.core_obj:Initialize()
     Observe("DataTerm", "OnAreaEnter", function(this, evt)
         InsideStation.log_obj:Record(LogLevel.Trace, "DataTerm OnAreaEnter")
         local tags = this.tags.tags
@@ -71,10 +64,6 @@ registerForEvent("onDraw", function()
             InsideStation.debug_obj:ImGuiMain()
         end
     end
-end)
-
-registerForEvent('onUpdate', function(delta)
-    Cron.Update(delta)
 end)
 
 function InsideStation:CheckDependencies()
