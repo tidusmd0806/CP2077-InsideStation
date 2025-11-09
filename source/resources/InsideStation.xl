@@ -103,6 +103,179 @@ streaming:
           type: worldCollisionNode
           expectedInstances: 2
           instanceDeletions: [0]
+    # 2: Med Center
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_3_0_3.streamingsector
+      expectedNodes: 2094
+      nodeDeletions:
+        - index: 1000
+          type: worldStaticOccluderMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_1_0_4.streamingsector
+      expectedNodes: 1359
+      nodeDeletions:
+        - index: 386
+          type: worldStaticOccluderMeshNode
+        - index: 1212
+          type: worldInstancedOccluderNode
+          expectedInstances: 6
+          instanceDeletions: [0]
+        - index: 1245
+          type: worldInstancedOccluderNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 1256
+          type: worldInstancedOccluderNode
+          expectedInstances: 4
+          instanceDeletions: [3]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-22_26_0_0.streamingsector
+      expectedNodes: 1403
+      nodeMutations:
+        - index: 638
+          type: worldEntityNode
+          position: [-1366.357, 1711.750, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 639
+          type: worldEntityNode
+          position: [-1366.705, 1707.781, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-22_27_0_0.streamingsector
+      expectedNodes: 889
+      nodeMutations:
+        - index: 421
+          type: worldEntityNode
+          position: [-1364.527, 1732.668, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 422
+          type: worldEntityNode
+          position: [-1364.177, 1736.670, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 424
+          type: worldEntityNode
+          position: [-1405.866, 1766.338, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.044, 0.999]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-23_27_0_0.streamingsector
+      expectedNodes: 989
+      nodeMutations:
+        - index: 449
+          type: worldEntityNode
+          position: [-1409.816, 1766.683, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.044, 0.999]
+    - path: base\worlds\03_night_city\_compiled\default\interior_-22_27_0_1.streamingsector
+      expectedNodes: 20
+      nodeDeletions:
+        - index: 18
+          type: worldCollisionNode
+          expectedInstances: 22
+          instanceDeletions: [19]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-11_13_0_1.streamingsector
+      expectedNodes: 1405
+      nodeDeletions:
+        - index: 1383
+          type: worldCollisionNode
+          expectedInstances: 39
+          instanceDeletions: [21]
+      nodeMutations:
+        - index: 240
+          type: worldGenericProxyMeshNode
+          position: [-1366.705, 1707.781, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 241
+          type: worldGenericProxyMeshNode
+          position: [-1366.357, 1711.750, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 242
+          type: worldGenericProxyMeshNode
+          position: [-1364.177, 1736.670, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 243
+          type: worldGenericProxyMeshNode
+          position: [-1364.527, 1732.668, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 328
+          type: worldEntityProxyMeshNode
+          position: [-1366.705, 1707.781, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 329
+          type: worldEntityProxyMeshNode
+          position: [-1366.357, 1711.750, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.737, -0.676]
+        - index: 333
+          type: worldEntityProxyMeshNode
+          position: [-1405.866, 1766.338, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.044, 0.999]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-12_13_0_1.streamingsector
+      expectedNodes: 1265
+      nodeDeletions:
+        - index: 1222
+          type: worldCollisionNode
+          expectedInstances: 22
+          instanceDeletions: [12]
+      nodeMutations:
+        - index: 247
+          type: worldEntityProxyMeshNode
+          position: [-1409.816, 1766.683, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.044, 0.999]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-6_6_0_2.streamingsector
+      expectedNodes: 2506
+      nodeDeletions:
+        - index: 1952
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [0]
+        - index: 1953
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 1971
+          type: worldInstancedMeshNode
+          expectedInstances: 20
+          instanceDeletions: [11, 15]
+        - index: 2285
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [0]
+        - index: 2470
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [96, 97]
+        - index: 2471
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [67]
+      nodeMutations:
+        - index: 76
+          type: worldGenericProxyMeshNode
+          position: [-1409.816, 1766.683, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.044, 0.999]
+        - index: 77
+          type: worldGenericProxyMeshNode
+          position: [-1405.866, 1766.338, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.044, 0.999]
+    - path: base\worlds\03_night_city\_compiled\default\interior_-3_3_0_4.streamingsector
+      expectedNodes: 59
+      nodeDeletions:
+        - index: 47
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 50
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 58
+          type: worldCollisionNode
+          expectedInstances: 49
+          instanceDeletions: [45]
+    - path: base\worlds\03_night_city\_compiled\default\interior_-12_13_0_2.streamingsector
+      expectedNodes: 18
+      nodeDeletions:
+        - index: 13
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 17
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [2]
     # 3:Farrier Ferguson
     - path: base\worlds\03_night_city\_compiled\default\exterior_-7_5_0_2.streamingsector
       expectedNodes: 1525
@@ -495,7 +668,311 @@ streaming:
           type: worldEntityProxyMeshNode
           position: [-1445.440, 1015.821, 0.0, 0.0]
           orientation: [0.0, 0.0, -0.737, 0.676]
-
+    # 5:Monroe & Sagan
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_17_0_0.streamingsector
+      expectedNodes: 806
+      nodeDeletions:
+        - index: 39
+          type: worldGenericProxyMeshNode
+        - index: 41
+          type: worldGenericProxyMeshNode
+        - index: 42
+          type: worldGenericProxyMeshNode
+        - index: 43
+          type: worldGenericProxyMeshNode
+        - index: 406
+          type: worldStaticMeshNode
+        - index: 407
+          type: worldStaticMeshNode
+        - index: 567
+          type: worldInstancedOccluderNode
+          expectedInstances: 6
+          instanceDeletions: [2]
+        - index: 753
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [53]
+      nodeMutations:
+        - index: 380
+          type: worldEntityNode
+          position: [-519.306, 1115.543, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.887, -0.462]
+        # - index: 381
+        #   type: worldEntityNode
+        #   position: [-516.018, 1120.240, 0.0, 0.0]
+        #   orientation: [0.0, 0.0, 0.887, -0.462] 
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_4_0_2.streamingsector
+      expectedNodes: 1595
+      nodeMutations:
+        - index: 92
+          type: worldGenericProxyMeshNode
+          position: [-524.477, 1132.985, 15.0, 0.0]
+          orientation: [0.0, 0.0, 0.284, -0.959]
+        # - index: 95
+        #   type: worldGenericProxyMeshNode
+        #   position: [-516.018, 1120.240, 0.0, 0.0]
+        #   orientation: [0.0, 0.0, 0.887, -0.462] 
+        - index: 103
+          type: worldGenericProxyMeshNode
+          position: [-519.306, 1115.543, 15.0, 0.0]
+          orientation: [0.0, 0.0, 0.887, -0.462]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_17_1_0.streamingsector
+      expectedNodes: 145
+      nodeMutations:
+        - index: 40
+          type: worldEntityNode
+          position: [-524.023, 1139.179, 15.0, 0.0]
+          orientation: [0.0, 0.0, 0.284, -0.959]
+        - index: 41
+          type: worldEntityNode
+          position: [-524.477, 1132.985, 15.0, 0.0]
+          orientation: [0.0, 0.0, 0.284, -0.959]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_4_0_2.streamingsector
+      expectedNodes: 1595
+      nodeDeletions:
+        - index: 979
+          type: worldStaticMeshNode
+        - index: 1322
+          type: worldInstancedMeshNode
+          expectedInstances: 3
+          instanceDeletions: [0, 1, 2]
+        - index: 1327
+          type: worldInstancedMeshNode
+          expectedInstances: 6
+          instanceDeletions: [3]
+        - index: 1328
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 1329
+          type: worldInstancedMeshNode
+          expectedInstances: 12
+          instanceDeletions: [3, 4, 10]
+        - index: 1379
+          type: worldCollisionNode
+          expectedInstances: 70
+          instanceDeletions: [2, 3, 9, 61, 62]
+      nodeMutations:
+        - index: 91
+          type: worldGenericProxyMeshNode
+          position: [-524.023, 1139.179, 15.0, 0.0]
+          orientation: [0.0, 0.0, 0.284, -0.959] 
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-1_2_0_3.streamingsector
+      expectedNodes: 1509
+      nodeDeletions:
+        - index: 1065
+          type: worldStaticMeshNode
+        - index: 1066
+          type: worldStaticMeshNode
+      nodeMutations:
+        - index: 877
+          type: worldStaticMeshNode
+          position: [-517.170, 1119.140, 34.469, 0.0]
+          orientation: [0.0, 0.0, 0.462, 0.887]
+          scale: [0.425, 0.9, 0.697]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_8_0_1.streamingsector
+      expectedNodes: 2053
+      nodeDeletions:
+        - index: 783
+          type: worldStaticMeshNode
+        - index: 787
+          type: worldStaticMeshNode
+        - index: 939
+          type: worldStaticMeshNode
+        - index: 941
+          type: worldStaticMeshNode
+        - index: 1665
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [0, 1, 2, 3]
+        - index: 1690
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [1, 3]
+        - index: 1693
+          type: worldInstancedMeshNode
+          expectedInstances: 10
+          instanceDeletions: [1, 4]
+        - index: 1699
+          type: worldInstancedMeshNode
+          expectedInstances: 10
+          instanceDeletions: [1, 4]
+        - index: 1929
+          type: worldInstancedMeshNode
+          expectedInstances: 32
+          instanceDeletions: [5, 9]
+        - index: 1933
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [2]
+        - index: 1938
+          type: worldInstancedMeshNode
+          expectedInstances: 32
+          instanceDeletions: [2, 4, 5, 9, 21, 25]
+        - index: 2007
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [17]
+        - index: 2009
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [22, 23]
+        - index: 2023
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [3, 4]
+        - index: 2030
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [9]
+        - index: 2031
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [50, 119]
+        - index: 2033
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [31]
+        - index: 2040
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [54 ,55]
+        - index: 2046
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [25, 31, 37, 40]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_2_0_3.streamingsector
+      expectedNodes: 1511
+      nodeDeletions:
+        - index: 1141
+          type: worldInstancedOccluderNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 1261
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [52, 54, 82]
+        - index: 1272
+          type: worldCollisionNode
+          expectedInstances: 99
+          instanceDeletions: [63, 64, 69, 72, 79, 81, 87, 90]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-1_1_0_4.streamingsector
+      expectedNodes: 1093
+      nodeDeletions:
+        - index: 253
+          type: worldStaticOccluderMeshNode
+        - index: 256
+          type: worldStaticOccluderMeshNode
+        - index: 979
+          type: worldInstancedOccluderNode
+          expectedInstances: 6
+          instanceDeletions: [0]
+        - index: 1038
+          type: worldInstancedOccluderNode
+          expectedInstances: 12
+          instanceDeletions: [7]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-8_17_1_0.streamingsector
+      expectedNodes: 116
+      nodeDeletions:
+        - index: 104
+          type: worldInstancedMeshNode
+          expectedInstances: 12
+          instanceDeletions: [6]
+    # 6:Japantown South
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_3_0_0.streamingsector
+      expectedNodes: 689
+      nodeMutations:
+        - index: 342
+          type: worldEntityNode
+          position: [-566.370, 192.683, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.887, 0.462]
+        - index: 343
+          type: worldEntityNode
+          position: [-564.096, 195.931, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.887, 0.462]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_0_0_2.streamingsector
+      expectedNodes: 1371
+      nodeDeletions:
+        - index: 891
+          type: worldInstancedMeshNode
+          expectedInstances: 5
+          instanceDeletions: [1]
+        - index: 1008
+          type: worldInstancedMeshNode
+          expectedInstances: 5
+          instanceDeletions: [4]
+        - index: 1012
+          type: worldInstancedMeshNode
+          expectedInstances: 8
+          instanceDeletions: [4, 5, 6]
+        - index: 1014
+          type: worldInstancedMeshNode
+          expectedInstances: 6
+          instanceDeletions: [2]
+        - index: 1083
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 1311
+          type: worldCollisionNode
+          expectedInstances: 62
+          instanceDeletions: [14]
+        - index: 1341
+          type: worldCollisionNode
+          expectedInstances: 97
+          instanceDeletions: [48, 56]
+      nodeMutations:
+        - index: 203
+          type: worldGenericProxyMeshNode
+          position: [-564.096, 195.931, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.887, 0.462]
+        - index: 204
+          type: worldGenericProxyMeshNode
+          position: [-566.370, 192.683, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.887, 0.462]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-1_0_0_4.streamingsector
+      expectedNodes: 1597
+      nodeDeletions:
+        - index: 718
+          type: worldStaticOccluderMeshNode
+        - index: 745
+          type: worldStaticOccluderMeshNode
+        - index: 746
+          type: worldStaticOccluderMeshNode
+        - index: 1525
+          type: worldInstancedOccluderNode
+          expectedInstances: 9
+          instanceDeletions: [0]
+        - index: 1529
+          type: worldInstancedOccluderNode
+          expectedInstances: 17
+          instanceDeletions: [11, 12, 13]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_3_1_0.streamingsector
+      expectedNodes: 68
+      nodeDeletions:
+        - index: 62
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 64
+          type: worldCollisionNode
+          expectedInstances: 3
+          instanceDeletions: [2]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_1_0_1.streamingsector
+      expectedNodes: 961
+      nodeDeletions:
+        - index: 456
+          type: worldStaticDecalNode
+        - index: 458
+          type: worldStaticDecalNode
+        - index: 460
+          type: worldStaticDecalNode
+        - index: 461
+          type: worldStaticDecalNode
+        - index: 959
+          type: worldCollisionNode
+          expectedInstances: 46
+          instanceDeletions: [9, 14, 16, 17]
     # 7:Alexander st
     - path: base\worlds\03_night_city\_compiled\default\exterior_-2_0_0_4.streamingsector
       expectedNodes: 1639
@@ -621,6 +1098,30 @@ streaming:
       nodeDeletions:
         - index: 704
           type: worldEntityNode
+      nodeMutations:
+        - index: 648
+          type: worldEntityNode
+          position: [-1034.971, -1430.461, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.452, 0.892]
+        - index: 649
+          type: worldEntityNode
+          position: [-1063.598, -1409.205, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.892, -0.452]
+        - index: 708
+          type: worldEntityNode
+          position: [-1052.839, -1427.316, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.301, 0.954]
+        - index: 709
+          type: worldEntityNode
+          position: [-1056.087, -1425.042, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.301, 0.954]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-17_-22_0_0.streamingsector
+      expectedNodes: 267
+      nodeMutations:
+        - index: 172
+          type: worldEntityNode
+          position: [-1053.224, -1394.624, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.892, -0.452]
     - path: base\worlds\03_night_city\_compiled\default\exterior_-16_-22_0_0.streamingsector
       expectedNodes: 529
       nodeDeletions:
@@ -628,6 +1129,142 @@ streaming:
           type: worldEntityNode
         - index: 302
           type: worldEntityNode
+        - index: 421
+          type: worldStaticMeshNode
+        - index: 422
+          type: worldStaticMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-16_-23_0_0.streamingsector
+      expectedNodes: 185
+      nodeMutations:
+        - index: 111
+          type: worldEntityNode
+          position: [-1024.597, -1415.882, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.452, 0.892]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-9_-12_0_1.streamingsector
+      expectedNodes: 2212
+      nodeDeletions:
+        - index: 1832
+          type: worldInstancedMeshNode
+          expectedInstances: 14
+          instanceDeletions: [6, 7, 12, 13]
+        - index: 2210
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [14, 56, 58, 59]
+      nodeMutations:
+        - index: 329
+          type: worldGenericProxyMeshNode
+          position: [-1056.087, -1425.042, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.301, 0.954]
+        - index: 331
+          type: worldGenericProxyMeshNode
+          position: [-1034.971, -1430.461, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.452, 0.892]
+        - index: 334
+          type: worldGenericProxyMeshNode
+          position: [-1052.839, -1427.316, 0.0, 0.0]
+          orientation: [0.0, 0.0, -0.301, 0.954]
+        - index: 337
+          type: worldGenericProxyMeshNode
+          position: [-1063.598, -1409.205, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.892, -0.452]
+        - index: 339
+          type: worldGenericProxyMeshNode
+          position: [-1053.224, -1394.624, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.892, -0.452]
+        - index: 344
+          type: worldGenericProxyMeshNode
+          position: [-1024.597, -1415.882, 0.0, 0.0]
+          orientation: [0.0, 0.0, 0.452, 0.892]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_-3_0_3.streamingsector
+      expectedNodes: 1478
+      nodeDeletions:
+        - index: 1253
+          type: worldInstancedMeshNode
+          expectedInstances: 4
+          instanceDeletions: [1]
+        - index: 1269
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+        - index: 1427
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [11, 14]
+        - index: 1429
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [8]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-2_0_4.streamingsector
+      expectedNodes: 882
+      nodeDeletions:
+        - index: 854
+          type: worldInstancedOccluderNode
+          expectedInstances: 4
+          instanceDeletions: [0]
+        - index: 796
+          type: worldInstancedOccluderNode
+          expectedInstances: 4
+          instanceDeletions: [2]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_-3_0_3.streamingsector
+      expectedNodes: 872
+      nodeDeletions:
+        - index: 544
+          type: worldStaticOccluderMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-1_-2_0_4.streamingsector
+      expectedNodes: 790
+      nodeDeletions:
+        - index: 285
+          type: worldStaticOccluderMeshNode
+        - index: 781
+          type: worldInstancedOccluderNode
+          expectedInstances: 2
+          instanceDeletions: [0]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-4_-6_0_2.streamingsector
+      expectedNodes: 2407
+      nodeDeletions:
+        - index: 1268
+          type: worldStaticMeshNode
+        - index: 1271
+          type: worldStaticMeshNode
+        - index: 2039
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 2054
+          type: worldInstancedMeshNode
+          expectedInstances: 2
+          instanceDeletions: [1]
+        - index: 2337
+          type: worldCollisionNode
+          expectedInstances: 11
+          instanceDeletions: [10]
+        - index: 2354
+          type: worldCollisionNode
+          expectedInstances: 25
+          instanceDeletions: [16]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-5_-6_0_2.streamingsector
+      expectedNodes: 2668
+      nodeDeletions:
+        - index: 2633
+          type: worldCollisionNode
+          expectedInstances: 128
+          instanceDeletions: [108]
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-8_-11_0_1.streamingsector
+      expectedNodes: 820
+      nodeDeletions:
+        - index: 715
+          type: worldInstancedMeshNode
+          expectedInstances: 6
+          instanceDeletions: [4]
+        - index: 793
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [0, 1]      
+        - index: 800
+          type: worldCollisionNode
+          expectedInstances: 64
+          instanceDeletions: [11]    
     # 9:Sarasti & Republic
     - path: base\worlds\03_night_city\_compiled\default\exterior_-3_0_0_3.streamingsector
       expectedNodes: 2276
